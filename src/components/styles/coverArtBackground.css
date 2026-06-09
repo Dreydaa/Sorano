@@ -1,0 +1,36 @@
+/* CoverArtBackground.css */
+
+.coverart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  cursor: pointer;
+}
+
+/* Background blur layer */
+.coverart-blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  transform: scale(1.009); /* Évite les bords blancs du blur */
+}
+
+/* Classes pour les différentes positions */
+.coverart-blur-bg.position-center {
+  background-position: center;
+}
+
+.coverart-blur-bg.position-top {
+  background-position: top;
+}
+
+.coverart-blur-bg.position-bottom {
+  background-position: bottom;
+}

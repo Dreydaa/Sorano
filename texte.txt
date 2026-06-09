@@ -1,0 +1,43 @@
+
+switch vers sorano 
+creation du github
+ajout translate sur les cover albums
+
+
+ajout des models blender
+
+création de l'animation de transition entre les pages lorsque je clique sur une cover elle se centre sur l'écran 
+puis apparition du lecteur et de la cover avec du blur. Si je skip de musique alors animation de la cover qui part vers 
+la droite ou la gauche en fonction si c'est le morceau suivant ou precedent. Lors du titre jouer la cover afficher sera un modèle 3D
+
+
+**/ détails **/
+
+
+pour prochain prompt corriger le fait que lorsqu'on arrive en bas du container on
+rescrollent jusqu'en haut car pas ésthétique
+
+
+mettre au point la transition en click cube et track playing avec lecteur
+
+ajouter une page pour le chargements des modèles avec un 0 a 100%
+
+Optimisé les performance et rajouter page de chargement 
+
+
+idées poster graphic design : 
+casque apple (tap in de malade) en l'air avec des goutelettes d'eau dessus avec en dessous le titre (j'ai pas d'autre idées)
+
+
+RESTE A FAIRE : 
+
+2.FAIRE LE LECTEUR AVEC L'ANIMATION QUI VA AVEC MANQUE L'ANIMATION MAIS C OK 
+
+4.RECORRIGER LE SCROLL INFINI 
+
+5.RETRAVAILLER LES DÉTAILS DES ANIMATIONS
+
+
+7.CONNECTER LE CLOUDFLARE
+
+8.POSTER SORANO POUR INSTA/TWITTER/TIKTOK (useless mais bon)
