@@ -3,6 +3,8 @@ import { Play, Pause, SkipBack, SkipForward, Shuffle, Repeat, Volume2 } from 'lu
 
 const MiniPlayer = ({ playerProps }) => {
   const {
+    showBack,
+    handleBack,
     isPlaying,
     currentTime,
     duration,
@@ -63,7 +65,7 @@ const MiniPlayer = ({ playerProps }) => {
     e.preventDefault();
     isDraggingVolume.current = true;
     updateVolumeFromEvent(e);
-    
+
     const handleMouseMove = (moveEvent) => {
       if (isDraggingVolume.current) updateVolumeFromEvent(moveEvent);
     };
@@ -85,15 +87,23 @@ const MiniPlayer = ({ playerProps }) => {
     const nextPercent = Math.max(0, Math.min(100, (clickX / rect.width) * 100));
     audioRef.current.currentTime = (nextPercent / 100) * duration;
   };
-
+  
   return (
     <>
+    {showBack && (
+        <button
+          className="back-btn"
+          onClick={handleBack}
+        >
+          ← Back
+        </button>
+      )}
       {/* ⚡ Ajout de la classe dynamique --visible selon l'état de showCoverArt */}
       <section className={`music-player ${showCoverArt ? 'music-player--visible' : ''}`}>
         <header className="music-player__header">
           {/* On applique la classe de scroll dynamiquement selon le morceau actuel */}
           <div className={`music-player__title-track ${currentTrack?.scrollText ? 'music-player__title-track--scroll' : ''}`}>
-            
+
             <h1 className="music-player__title">
               <span>{currentTrack?.title || "Sélectionnez un titre"}</span>
               <span> - </span>
@@ -117,8 +127,8 @@ const MiniPlayer = ({ playerProps }) => {
 
         <div className="music-player__progress-container">
           <time className="music-player__time">{formatTime(currentTime)}</time>
-          <div 
-            className="music-player__progress-bar" 
+          <div
+            className="music-player__progress-bar"
             ref={progressBarRef}
             onClick={handleProgressClick}
             style={{ cursor: 'pointer' }}
@@ -131,7 +141,7 @@ const MiniPlayer = ({ playerProps }) => {
 
         <nav className="music-player__controls" aria-label="Music player controls">
           <div className="music-player__controls-group">
-            
+
             <button
               className={`music-player__btn music-player__btn--repeat ${repeat ? 'music-player__btn--active' : ''}`}
               aria-pressed={repeat}
@@ -168,7 +178,7 @@ const MiniPlayer = ({ playerProps }) => {
                 aria-label="Next track"
                 onClick={handleNext}
               >
-                 <SkipForward size={48} strokeWidth={1} />
+                <SkipForward size={48} strokeWidth={1} />
               </button>
             </div>
 
