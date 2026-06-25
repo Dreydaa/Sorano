@@ -43,7 +43,7 @@ const CoverArtBackground = ({ coverArt, backgroundPosition = 'center', isVisible
       <div 
         className="coverart-blur-bg"
         style={{ 
-           backgroundImage: `url(${coverArt})`,
+          backgroundImage: `url(${coverArt})`,
           backgroundPosition: bgPosition,
           backgroundSize: 'cover', // Changé de 'cover' à 'contain'
           backgroundRepeat: 'no-repeat',

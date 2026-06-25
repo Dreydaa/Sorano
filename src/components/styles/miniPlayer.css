@@ -178,14 +178,14 @@
   border: none;
   padding: 4px;
   cursor: pointer;
-  color: #ffffff;
+  color: #aaaaaa;
   transition: all 0.2s ease;
   -webkit-appearance: none;
   appearance: none;
 }
 
 .music-player__btn:hover {
-  opacity: 0.75;
+  color: #ffffff;
   transform: scale(1.05);
 }
 
@@ -195,7 +195,7 @@
 
 .music-player__btn--active,
 .music-player__btn[aria-pressed="true"] {
-  color: #ffffff !important;
+  color: #aaaaaa !important;
   opacity: 1;
 }
 

@@ -1,10 +1,10 @@
 [
   {
     "id": 0,
-    "title": "Mwen An Sa",
-    "artist": "SKUNK, Tiitof, Leto",
-    "audio": "../../audio/Mwen An Sa.mp3",
-    "coverart": "/BG_cover/mewnasa.webp",
+    "title": "Summertime Sadness",
+    "artist": "Lana Del Rey",
+    "audio": "../../audio/Summertime Sadness.mp3",
+    "coverart": "/BG_cover/.webp",
     "backgroundPosition": "center",
     "modelPath": "./src/assets/model/mwen.glb",
     "scrollText": true
@@ -21,11 +21,11 @@
   },
   {
     "id": 2,
-    "title": "all of me",
-    "artist": "21 savage",
-    "audio": "../../audio/all of me.mp3",
-    "coverart": "/BG_cover/21savage.webp",
-    "modelPath": "./src/assets/model/21.glb"
+    "title": "MAKALA",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 3,
@@ -115,19 +115,19 @@
   },
   {
     "id": 13,
-    "title": "Postiché",
-    "artist": "Jul ft. PLK",
-    "audio": "../../audio/Postiché.mp3",
-    "coverart": "/BG_cover/Postiche.webp",
-    "modelPath": "./src/assets/model/jul.glb"
+    "title": "VARNISH",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 14,
-    "title": "Glaive",
-    "artist": "Booba",
-    "audio": "../../audio/GLAIVE.mp3",
-    "coverart": "/BG_cover/booba.webp",
-    "modelPath": "./src/assets/model/glaive.glb"
+    "title": "HAVEN",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 15,
@@ -244,12 +244,12 @@
   },
   {
     "id": 28,
-    "title": "Fallin'",
-    "artist": "Alicia Keys",
-    "audio": "../../audio/Fallin'.mp3",
-    "coverart": "/BG_cover/fallin.webp",
+    "title": "HUNTRILL",
+    "artist": " ",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
     "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/alicia.glb"
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 29,
@@ -331,19 +331,19 @@
   },
   {
     "id": 38,
-    "title": "Girls Just Want to Have Fun",
-    "artist": "Cyndi Lauper",
-    "audio": "../../audio/Girls Just Want to Have Fun.mp3",
-    "coverart": "/BG_cover/girls.webp",
-    "modelPath": "./src/assets/model/cyndi.glb"
+    "title": "naughties",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 39,
-    "title": "Got It On Me",
+    "title": "HELLO",
     "artist": "Pop Smoke",
-    "audio": "../../audio/Got It On Me.mp3",
-    "coverart": "/BG_cover/Got.webp",
-    "modelPath": "./src/assets/model/popsmoke.glb"
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 40,
@@ -379,11 +379,11 @@
   },
   {
     "id": 44,
-    "title": "44",
-    "artist": "Niska",
-    "audio": "../../audio/44.mp3",
-    "coverart": "/BG_cover/44.webp",
-    "modelPath": "./src/assets/model/niska.glb"
+    "title": "JAZZY BAZZ",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 45,
@@ -515,11 +515,11 @@
   },
   {
     "id": 60,
-    "title": "Même pas un grincement",
+    "title": "PISTOL ZAMAL",
     "artist": "Ziak",
-    "audio": "../../audio/Même pas un grincement.mp3",
-    "coverart": "/BG_cover/meme.webp",
-    "modelPath": "./src/assets/model/ziak.glb"
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 61,
@@ -531,11 +531,11 @@
   },
   {
     "id": 62,
-    "title": "Million Years Ago",
-    "artist": "Adele",
-    "audio": "../../audio/Million Years Ago.mp3",
-    "coverart": "/BG_cover/Million.webp",
-    "modelPath": "./src/assets/model/adele.glb"
+    "title": "hugo rodalleha",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 63,
@@ -547,11 +547,11 @@
   },
   {
     "id": 64,
-    "title": "Somethin'Stupid",
-    "artist": "Frank Sinatra, Nancy Sinatra",
-    "audio": "../../audio/Somethin' Stupid.mp3",
-    "coverart": "/BG_cover/nancyjpg.webp",
-    "modelPath": "./src/assets/model/something.glb",
+    "title": "MEC DE PANAME",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb",
     "scrollText": true
   },
   {
@@ -581,19 +581,19 @@
   },
   {
     "id": 68,
-    "title": "Express Yourself",
-    "artist": "N.W.A",
-    "audio": "../../audio/Express Yourself.mp3",
-    "coverart": "/BG_cover/nwa.webp",
-    "modelPath": "./src/assets/model/nwa.glb"
+    "title": "LINLIN",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 69,
-    "title": "O.D",
-    "artist": "Nekfeu",
-    "audio": "../../audio/O.D.mp3",
-    "coverart": "/BG_cover/OD.webp",
-    "modelPath": "./src/assets/model/od.glb"
+    "title": "NELICK",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 70,
@@ -629,11 +629,11 @@
   },
   {
     "id": 74,
-    "title": "Poker Face",
+    "title": "Million reason",
     "artist": "Lady Gaga",
-    "audio": "../../audio/Poker Face.mp3",
-    "coverart": "/BG_cover/Poker.webp",
-    "modelPath": "./src/assets/model/gaga.glb"
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 75,
@@ -680,11 +680,11 @@
   },
   {
     "id": 80,
-    "title": "Rose",
-    "artist": "Ninho",
-    "audio": "../../audio/Rose.mp3",
-    "coverart": "/BG_cover/rose.webp",
-    "modelPath": "./src/assets/model/ninho.glb"
+    "title": "Abeille",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 81,
@@ -696,11 +696,11 @@
   },
   {
     "id": 82,
-    "title": "Yakalelo",
+    "title": "REDESCENDS",
     "artist": "SDM",
-    "audio": "../../audio/Yakalelo.mp3",
-    "coverart": "/BG_cover/sdm.webp",
-    "modelPath": "./src/assets/model/sdm.glb"
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 83,
@@ -736,11 +736,11 @@
   },
   {
     "id": 87,
-    "title": "Stars",
-    "artist": "Doums ft. Laylow",
-    "audio": "../../audio/Stars (feat. Laylow).mp3",
-    "coverart": "/BG_cover/stars.webp",
-    "modelPath": "./src/assets/model/doums.glb"
+    "title": "One thing",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 88,
@@ -802,12 +802,12 @@
   },
   {
     "id": 95,
-    "title": "3095 pt2",
-    "artist": "Alpha Wann, 3010, Nekfeu",
-    "audio": "../../audio/3095 pt2.mp3",
-    "coverart": "/BG_cover/mistubishi.webp",
+    "title": "FINIS LES ",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
     "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/3095.glb"
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 96,
@@ -876,11 +876,11 @@
   },
   {
     "id": 104,
-    "title": "RENCONTRE",
-    "artist": "Disiz, Damso",
-    "audio": "../../audio/RENCONTRE.mp3",
-    "coverart": "/BG_cover/rencontre.webp",
-    "modelPath": "./src/assets/model/rencontre.glb"
+    "title": "TALK TO YOU",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 105,
@@ -902,11 +902,11 @@
   },
   {
     "id": 107,
-    "title": "Zidane",
-    "artist": "Sofiane",
-    "audio": "../../audio/Zidane.mp3",
-    "coverart": "/BG_cover/fianso.webp",
-    "modelPath": "./src/assets/model/zidane.glb"
+    "title": "could be wrong",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   },
   {
     "id": 108,
@@ -976,7 +976,7 @@
   {
     "id": 116,
     "title": "CHAQUE JOUR DE LA SEMAINE",
-    "artist": "",
+    "artist": "Green Montana",
     "audio": "../../audio/CHAQUE JOUR DE LA SEMAINE.mp3",
     "coverart": "/BG_cover/nostalgia.webp",
     "modelPath": "./src/assets/model/chaque.glb",
@@ -1049,28 +1049,28 @@
   },
   {
     "id": 125,
-    "title": "Nuthin' But A 'G' Thang ",
-    "artist": "Dr.Dre, Snoop Dogg",
-    "audio": "../../audio/Nuthin' But A G Thang.mp3",
-    "coverart": "/BG_cover/dre.webp",
-    "modelPath": "./src/assets/model/drdre.glb",
+    "title": "rain fall",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb",
     "scrollText": true
   },
   {
     "id": 126,
-    "title": "Survival Tactics",
-    "artist": "Joey Bada$$, Capital Steez",
-    "audio": "../../audio/Survival Tactics.mp3",
-    "coverart": "/BG_cover/1999.webp",
-    "modelPath": "./src/assets/model/survival.glb",
+    "title": "E85",
+    "artist": "",
+    "audio": "../../audio/ics.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb",
     "scrollText": true
   },
   {
     "id": 127,
-    "title": "Can't Help Falling in Love",
-    "artist": "Elvis Presley",
-    "audio": "../../audio/Can't Help Falling in Love.mp3",
-    "coverart": "/BG_cover/bluehawai.webp",
-    "modelPath": "./src/assets/model/elvis.glb"
+    "title": "Adele",
+    "artist": "",
+    "audio": "../../audio/.mp3",
+    "coverart": "/BG_cover/.webp",
+    "modelPath": "./src/assets/model/.glb"
   }
 ]

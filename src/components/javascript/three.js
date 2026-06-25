@@ -431,6 +431,9 @@ const handleScrollUnlock = () => {
   const handleTrackChangeFromReact = (event) => {
     const nextCubeIndex = event.detail.cubeIndex;
     console.log("📢 Synchronisation 3D reçue pour l'index :", nextCubeIndex);
+
+    isTransitioning = false
+    
     triggerModelTransition(nextCubeIndex);
   };
   window.addEventListener("trackChanged", handleTrackChangeFromReact);
