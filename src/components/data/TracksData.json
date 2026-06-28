@@ -1,1076 +1,1154 @@
 [
   {
     "id": 0,
-    "title": "Summertime Sadness",
-    "artist": "Lana Del Rey",
-    "audio": "../../audio/Summertime Sadness.mp3",
-    "coverart": "/BG_cover/.webp",
+    "title": "It's A Vibe",
+    "artist": "2 Chainz, Ty Dolla $ign, Trey Songz, Jhené Aiko",
+    "audio": "",
+    "coverart": "/BG_cover/",
     "backgroundPosition": "center",
-    "modelPath": "./src/assets/model/mwen.glb",
-    "scrollText": true
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 1,
-    "title": "Boy's a liar Pt. 2",
-    "artist": "PinkPantheress ft. Ice spice",
-    "audio": "../../audio/Boy's a liar Pt. 2.mp3",
-    "coverart": "/BG_cover/boys.webp",
+    "title": "ORANGE SODA",
+    "artist": "Baby Keem",
+    "audio": "",
+    "coverart": "/BG_cover/",
     "backgroundPosition": "center",
-    "modelPath": "./src/assets/model/boys.glb",
-    "scrollText": true
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 2,
-    "title": "MAKALA",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Juicy - 2005 Remaster",
+    "artist": "The Notorious B.I.G.",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 3,
-    "title": "AhGars!",
-    "artist": "Josman",
-    "audio": "../../audio/AhGars!.mp3",
-    "coverart": "/BG_cover/ahgars.webp",
+    "title": "On the Low",
+    "artist": "Burna Boy",
+    "audio": "",
+    "coverart": "/BG_cover/",
     "backgroundPosition": "center",
-    "modelPath": "./src/assets/model/josman.glb"
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 4,
-    "title": "4:44",
-    "artist": "Jay-Z",
-    "audio": "../../audio/444.mp3",
-    "coverart": "/BG_cover/444.webp",
-    "backgroundPosition": "bottom",
-    "modelPath": "./src/assets/model/444.glb"
+    "title": "Pololo",
+    "artist": "MHD, Tiakola",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 5,
-    "title": "Mi Amor",
-    "artist": "Hamza",
-    "audio": "../../audio/Mi Amor.mp3",
-    "coverart": "/BG_cover/amor.webp",
-    "modelPath": "./src/assets/model/amor.glb"
+    "title": "DtMF",
+    "artist": "Bad Bunny",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 6,
-    "title": "Annihilate (Spider-Man: Across the Spider-Verse)",
-    "artist": "Metro Boomin ft. Swae Lee, Lil Wayne, Offset",
-    "audio": "../../audio/Annihilate (Spider-Man Across the Spider-Verse) (Metro Boomin & Swae Lee, Lil Wayne, Offset).mp3",
-    "coverart": "/BG_cover/annihilate.webp",
-    "modelPath": "./src/assets/model/spidey.glb",
-    "scrollText": true
+    "title": "Summertime Sadness",
+    "artist": "Lana Del Rey",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 7,
-    "title": "7 rings",
-    "artist": "Ariana Grande",
-    "audio": "../../audio/7 rings.mp3",
-    "coverart": "/BG_cover/rings.webp",
-    "modelPath": "./src/assets/model/7.glb"
+    "title": "10 Toes",
+    "artist": "070 Phi, J Sebastian",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 8,
-    "title": "BLACK BALLOONS | 13LACK 13ALLOON",
-    "artist": "Denzel Curry",
-    "audio": "../../audio/BLACK BALLOONS 13LACK 13ALLOONZ [FEAT. TWELVE'LEN & GOLDLINK TWELVE'LEN + GOLDL1NK].mp3",
-    "coverart": "/BG_cover/ballons.webp",
-    "modelPath": "./src/assets/model/ballons.glb",
-    "scrollText": true
+    "title": "D BLOCK AFRIQUE",
+    "artist": "Dinos, Jolagreen23, La Mano 1.9",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 9,
-    "title": "9",
-    "artist": "Kerchak",
-    "audio": "../../audio/9.mp3",
-    "coverart": "/BG_cover/9.webp",
-    "modelPath": "./src/assets/model/9.glb"
+    "title": "BLACC*",
+    "artist": "LinLin",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 10,
-    "title": "10 Toes",
-    "artist": "070 Phi",
-    "audio": "../../audio/10 Toes.mp3",
-    "coverart": "/BG_cover/toes.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/toes.glb"
+    "title": "7 rings",
+    "artist": "Ariana Grande",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 11,
-    "title": "Wasteman",
-    "artist": "V.I.C",
-    "audio": "../../audio/Wasteman.mp3",
-    "coverart": "/BG_cover/wasteman.webp",
-    "modelPath": "./src/assets/model/wasteman.glb"
+    "title": "FINIS-LES",
+    "artist": "La Fève",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 12,
-    "title": "La misère est si belle",
-    "artist": "PNL",
-    "audio": "../../audio/La misère est si belle.mp3",
-    "coverart": "/BG_cover/blanka.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/pnl.glb"
+    "title": "C.R.E.A.M. (Cash Rules Everything Around Me)",
+    "artist": "Wu-Tang Clan",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 13,
-    "title": "VARNISH",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "PONA NINI",
+    "artist": "Tiakola, Genezio, Prototype",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 14,
-    "title": "HAVEN",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Sundance",
+    "artist": "Népal",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 15,
-    "title": "BXL ZOO",
-    "artist": "Damso ft. Hamza",
-    "audio": "../../audio/BXL ZOO.mp3",
-    "coverart": "/BG_cover/bxl.webp",
-    "modelPath": "./src/assets/model/bxl.glb"
+    "title": "Don't Start Now",
+    "artist": "Dua Lipa",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 16,
-    "title": "NO BYSTANDERS",
-    "artist": "Travis Scott ft. Don Toliver",
-    "audio": "../../audio/NO BYSTANDERS.mp3",
-    "coverart": "/BG_cover/cantstop.webp",
-    "modelPath": "./src/assets/model/travis.glb",
-    "scrollText": true
+    "title": "E85",
+    "artist": "Don Toliver",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 17,
-    "title": "Cardigan",
-    "artist": "Don Toliver",
-    "audio": "../../audio/Cardigan.mp3",
-    "coverart": "/BG_cover/cardigan.webp",
-    "modelPath": "./src/assets/model/cardigan.glb"
+    "title": "Fukk Sleep (feat. FKA twigs)",
+    "artist": "A$AP Rocky, FKA twigs",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 18,
-    "title": "Champagne Shots",
-    "artist": "Sainté",
-    "audio": "../../audio/Champagne Shots.mp3",
-    "coverart": "/BG_cover/champagne.webp",
-    "modelPath": "./src/assets/model/sainte.glb"
+    "title": "Can't Remember to Forget You (feat. Rihanna)",
+    "artist": "Shakira, Rihanna",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 19,
-    "title": "They Don't Care About Us",
-    "artist": "Michael Jackson",
-    "audio": "../../audio/They Don't Care About Us.mp3",
-    "coverart": "/BG_cover/theydontcare.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/MJ.glb",
-    "scrollText": true
+    "title": "GATTI",
+    "artist": "JACKBOYS, Pop Smoke, Travis Scott",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 20,
-    "title": "Chico",
-    "artist": "S.Pri Noir",
-    "audio": "../../audio/Chico.mp3",
-    "coverart": "/BG_cover/chico.webp",
-
-    "modelPath": "./src/assets/model/chico.glb"
+    "title": "Annihilate (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee, Lil Wayne, Offset)",
+    "artist": "Metro Boomin, Swae Lee, Lil Wayne, Offset",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 21,
-    "title": "21 Questions",
-    "artist": "50 Cent ft. Nate Dogg",
-    "audio": "../../audio/21 Questions.mp3",
-    "coverart": "/BG_cover/50.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/50.glb"
+    "title": "XO Tour Llif3",
+    "artist": "Lil Uzi Vert",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 22,
-    "title": "Consideration",
-    "artist": "Rihanna ft. SZA",
-    "audio": "../../audio/Consideration.mp3",
-    "coverart": "/BG_cover/consideartion.webp",
-    "modelPath": "./src/assets/model/rihanna.glb"
+    "title": "4:44",
+    "artist": "JAŸ-Z",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 23,
-    "title": "Count Me Out",
-    "artist": "Kendrick Lamar",
-    "audio": "../../audio/Count Me Out.mp3",
-    "coverart": "/BG_cover/count.webp",
-    "modelPath": "./src/assets/model/count.glb"
+    "title": "Schémas Monotones",
+    "artist": "EDGE",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 24,
-    "title": "C.R.E.A.M (Cash Rules Everything Around Me)",
-    "artist": "Wu-Tang Clan",
-    "audio": "../../audio/C.R.E.A.M. (Cash Rules Everything Around Me).mp3",
-    "coverart": "/BG_cover/cream.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/wu.glb",
-    "scrollText": true
+    "title": "2MS",
+    "artist": "Nemzzz",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 25,
-    "title": "PUNK TACTICS",
-    "artist": "Joey Valence & Brae",
-    "audio": "../../audio/PUNK TACTICS.mp3",
-    "coverart": "/BG_cover/punk.webp",
-
-    "modelPath": "./src/assets/model/punk.glb"
+    "title": "Cardigan",
+    "artist": "Don Toliver",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 26,
-    "title": "Don't Start Now",
-    "artist": "Dua Lipa",
-    "audio": "../../audio/Don't Start Now.mp3",
-    "coverart": "/BG_cover/dontstart.webp",
-
-    "modelPath": "./src/assets/model/dua.glb"
+    "title": "NORMAL",
+    "artist": "Fallon",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 27,
-    "title": "Happier Than Ever",
-    "artist": "Billie Eilish",
-    "audio": "../../audio/Happier Than Ever.mp3",
-    "coverart": "/BG_cover/ever.webp",
-    "modelPath": "./src/assets/model/billie.glb"
+    "title": "BXL ZOO",
+    "artist": "Damso, Hamza",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 28,
-    "title": "HUNTRILL",
-    "artist": " ",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Naughties",
+    "artist": "KiLLOWEN",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 29,
-    "title": "Normal",
-    "artist": "Fallon",
-    "audio": "../../audio/Normal.mp3",
-    "coverart": "/BG_cover/Fallon.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/fallon.glb"
+    "title": "Count Me Out",
+    "artist": "Kendrick Lamar",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 30,
-    "title": "Father Stretch My Hands Pt. 1",
-    "artist": "Kanye West",
-    "audio": "../../audio/Father Stretch My Hands Pt. 1.mp3",
-    "coverart": "/BG_cover/Father.webp",
-    "modelPath": "./src/assets/model/ye.glb",
-    "scrollText": true
+    "title": "Narcos",
+    "artist": "Migos",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 31,
-    "title": "FAUX G",
-    "artist": "Saboteur ft. Deen Burbigo, Jazzy Bazz, La Fève",
-    "audio": "../../audio/FAUX G.mp3",
-    "coverart": "/BG_cover/fauxg.webp",
-    "modelPath": "./src/assets/model/saboteurs.glb",
-    "scrollText": true
+    "title": "GIRL LIKE ME",
+    "artist": "Black Eyed Peas, Shakira",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 32,
-    "title": "Pick your poison",
-    "artist": "KiLLOWEN",
-    "audio": "../../audio/pick your poison.mp3",
-    "coverart": "/BG_cover/poison.webp",
-    "modelPath": "./src/assets/model/poison.glb"
+    "title": "NEW DROP",
+    "artist": "Don Toliver",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 33,
-    "title": "Fuck Love",
-    "artist": "XXXTENTACION ft. Trippie Redd",
-    "audio": "../../audio/Fuck Love.mp3",
-    "coverart": "/BG_cover/fucklove.webp",
-    "modelPath": "./src/assets/model/fcklove.glb",
-    "scrollText": true
+    "title": "Meridian",
+    "artist": "Dave, Tiakola",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 34,
-    "title": "Fukk Sleep",
-    "artist": "A$AP Rocky ft. FKA twigs",
-    "audio": "../../audio/Fukk Sleep (feat. FKA twigs).mp3",
-    "coverart": "/BG_cover/fukk.webp",
-    "modelPath": "./src/assets/model/fkksleep.glb"
+    "title": "Father Stretch My Hands Pt. 1",
+    "artist": "Kanye West",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 35,
-    "title": "GARÇON",
-    "artist": "Luther",
-    "audio": "../../audio/GARÇON.mp3",
-    "coverart": "/BG_cover/garcon.webp",
-    "modelPath": "./src/assets/model/luther.glb"
+    "title": "113 fout la merde (feat. Thomas Bangalter)",
+    "artist": "113, Thomas Bangalter",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 36,
-    "title": "Gatti",
-    "artist": "JACKBOYS ft Travis Scott & Pop Smoke",
-    "audio": "../../audio/GATTI.mp3",
-    "coverart": "/BG_cover/gatti.webp",
-    "backgroundPosition": "bottom",
-    "modelPath": "./src/assets/model/gatti.glb",
-    "scrollText": true
+    "title": "91's",
+    "artist": "PNL",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 37,
-    "title": "EL GEMANO",
-    "artist": "Genezio ft. La Mano 1.9",
-    "audio": "../../audio/EL GEMANO.mp3",
-    "coverart": "/BG_cover/GEMANO.webp",
-    "modelPath": "./src/assets/model/gemano.glb"
+    "title": "Killing Me Softly With His Song",
+    "artist": "Fugees, Ms. Lauryn Hill",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 38,
-    "title": "naughties",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Mi Amor",
+    "artist": "Hamza",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 39,
-    "title": "HELLO",
-    "artist": "Pop Smoke",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Happier Than Ever",
+    "artist": "Billie Eilish",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 40,
-    "title": "Gun Salute",
-    "artist": "Kaaris",
-    "audio": "../../audio/Gun salute.mp3",
-    "coverart": "/BG_cover/gun.webp",
-    "modelPath": "./src/assets/model/kaaris.glb"
+    "title": "ROBBERY (feat. Doechii)",
+    "artist": "A$AP Rocky, Doechii",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 41,
-    "title": "Hips Don't Lie",
-    "artist": "Shakira ft. Wyclef Jean",
-    "audio": "../../audio/Hips Don't Lie (feat. Wyclef Jean).mp3",
-    "coverart": "/BG_cover/hips.webp",
-    "modelPath": "./src/assets/model/shakira.glb"
+    "title": "Lush Life",
+    "artist": "Zara Larsson",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 42,
-    "title": "BOOM BOOM",
-    "artist": "RSKO ft. IDS",
-    "audio": "../../audio/BOOM BOOM.mp3",
-    "coverart": "/BG_cover/iDS.webp",
-    "modelPath": "./src/assets/model/ids.glb"
+    "title": "No Lie",
+    "artist": "Sean Paul, Dua Lipa",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 43,
-    "title": "IVERSON",
-    "artist": "Laylow",
-    "audio": "../../audio/IVERSON.mp3",
-    "coverart": "/BG_cover/iverson.webp",
-    "modelPath": "./src/assets/model/laylow.glb"
+    "title": "Pistol & Zamal",
+    "artist": "Ziak",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 44,
-    "title": "JAZZY BAZZ",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Woman",
+    "artist": "Doja Cat",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 45,
-    "title": "Costa Rica",
-    "artist": "Dreamville, Bas, JID, Guapdad 4000, Reese, LAFLARE, Jace, Mez, Smokepurpp, Buddy, Ski Mask The Slump God",
-    "audio": "../../audio/Costa Rica (with Bas & JID feat. Guapdad 4000, Reese LAFLARE, Jace, Mez, Smokepurpp, Buddy & Ski Mask The Slump God).mp3",
-    "coverart": "/BG_cover/jcole.webp",
-    "modelPath": "./src/assets/model/dreamville.glb",
-    "scrollText": true
+    "title": "Abeille",
+    "artist": "Darlingchouchou",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 46,
-    "title": "Juicy",
-    "artist": "The Notorious B.I.G",
-    "audio": "../../audio/Juicy - 2005 Remaster.mp3",
-    "coverart": "/BG_cover/juicy.webp",
-    "modelPath": "./src/assets/model/juicy.glb"
+    "title": "COULD BE WRONG",
+    "artist": "LOSTBOYJAY",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 47,
-    "title": "Victory Lap",
-    "artist": "Fred again, Skepta, PlaqueBoyMax",
-    "audio": "../../audio/Victory Lap.mp3",
-    "coverart": "/BG_cover/fredagain.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/fred.glb",
-    "scrollText": true
+    "title": "LOVE YOU",
+    "artist": "Nono La Grinta",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 48,
-    "title": "Vibe & Sun",
-    "artist": "Kekra",
-    "audio": "../../audio/Vibe & Sun.mp3",
-    "coverart": "/BG_cover/kekra.webp",
-    "modelPath": "./src/assets/model/kekra.glb"
+    "title": "MANON B",
+    "artist": "Tiakola, Ryflo, Oskoow",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 49,
-    "title": "KILLCAM",
-    "artist": "NeS ft. Luther",
-    "audio": "../../audio/KILLCAM.mp3",
-    "coverart": "/BG_cover/killcam.webp",
-    "modelPath": "./src/assets/model/killcam.glb"
+    "title": "Million Reasons",
+    "artist": "Lady Gaga",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 50,
-    "title": "Killing Me Softly With His Song",
-    "artist": "Fugees, Ms Lauryn Hill",
-    "audio": "../../audio/Killing Me Softly With His Song.mp3",
-    "coverart": "/BG_cover/killing.webp",
-    "modelPath": "./src/assets/model/fugees.glb",
-    "scrollText": true
+    "title": "WE ON GO",
+    "artist": "BIA",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 51,
-    "title": "KONGOLESE SOUS BBL",
-    "artist": "Theodora ft. Jeez Suave",
-    "audio": "../../audio/KONGOLESE SOUS BBL.mp3",
-    "coverart": "/BG_cover/kongolese.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/theodora.glb",
-    "scrollText": true
+    "title": "Hugo Rodallega",
+    "artist": "Con Cook",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 52,
-    "title": "Lean On",
-    "artist": "Major Lazer & DJ Snake ft. MØ",
-    "audio": "../../audio/Lean On.mp3",
-    "coverart": "/BG_cover/lean.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/leanon.glb"
+    "title": "NEW MAGIC WAND",
+    "artist": "Tyler, The Creator",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 53,
-    "title": "NEW MAGIC WAND",
-    "artist": "Tyler The Creator",
-    "audio": "../../audio/NEW MAGIC WAND.mp3",
-    "coverart": "/BG_cover/tyler.webp",
-    "modelPath": "./src/assets/model/tyler.glb"
+    "title": "Starboy",
+    "artist": "The Weeknd, Daft Punk",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 54,
-    "title": "Legend",
-    "artist": "Drake",
-    "audio": "../../audio/Legend.mp3",
-    "coverart": "/BG_cover/legend.webp",
-    "modelPath": "./src/assets/model/drake.glb"
+    "title": "Numb Numb Juice",
+    "artist": "ScHoolboy Q",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 55,
-    "title": "No Lie",
-    "artist": "Sean Paul ft. Dua Lipa",
-    "audio": "../../audio/No Lie.mp3",
-    "coverart": "/BG_cover/Lie.webp",
-    "modelPath": "./src/assets/model/nolie.glb"
+    "title": "FAUX G",
+    "artist": "Saboteur, Deen Burbigo, Jazzy Bazz, La Fève",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 56,
-    "title": "LOVE YOU",
-    "artist": "Nono La Grinta",
-    "audio": "../../audio/LOVE YOU.mp3",
-    "coverart": "/BG_cover/nono.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/nono.glb"
+    "title": "STRaatos",
+    "artist": "Huntrill",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 57,
-    "title": "Lush Life",
-    "artist": "Zara Larsson",
-    "audio": "../../audio/Lush Life.mp3",
-    "coverart": "/BG_cover/lush.webp",
-    "modelPath": "./src/assets/model/zara.glb"
+    "title": "Self Care",
+    "artist": "Mac Miller",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 58,
-    "title": "MANON B",
-    "artist": "Tiakola",
-    "audio": "../../audio/MANON B.mp3",
-    "coverart": "/BG_cover/MANON.webp",
-    "modelPath": "./src/assets/model/manon.glb"
+    "title": "JOYSTICK (feat. Jäde & kofi bae)",
+    "artist": "nelick, Jäde, kofi bae",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 59,
-    "title": "DtMF",
-    "artist": "Bad Bunny",
-    "audio": "../../audio/DtMF.mp3",
-    "coverart": "/BG_cover/dtmf.webp",
-    "modelPath": "./src/assets/model/dtmf.glb"
+    "title": "BOOM BOOM",
+    "artist": "Rsko, iDS",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 60,
-    "title": "PISTOL ZAMAL",
-    "artist": "Ziak",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Costa Rica (with Bas & JID feat. Guapdad 4000, Reese LAFLARE, Jace, Mez, Smokepurpp, Buddy & Ski Mask The Slump God)",
+    "artist": "Dreamville, Bas, JID, Guapdad 4000, Reese LAFLARE, Jace, Mez, Smokepurpp, Buddy, Ski Mask The Slump God",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 61,
-    "title": "Meridian",
-    "artist": "Dave ft. Tiakola",
-    "audio": "../../audio/Meridian.mp3",
-    "coverart": "/BG_cover/meridian.webp",
-    "modelPath": "./src/assets/model/meridian.glb"
+    "title": "ADIOS, TORNADO'S EFFECT",
+    "artist": "Varnish La Piscine",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 62,
-    "title": "hugo rodalleha",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Hitman Go",
+    "artist": "Makala",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 63,
-    "title": "MONACO",
-    "artist": "HOUDI",
-    "audio": "../../audio/MONACO.mp3",
-    "coverart": "/BG_cover/monaco.webp",
-    "modelPath": "./src/assets/model/monaco.glb"
+    "title": "Wasteman",
+    "artist": "V.I.C",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 64,
-    "title": "MEC DE PANAME",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb",
-    "scrollText": true
+    "title": "They Don't Care About Us",
+    "artist": "Michael Jackson",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 65,
-    "title": "Narcos",
-    "artist": "Migos",
-    "audio": "../../audio/Narcos.mp3",
-    "coverart": "/BG_cover/narcos.webp",
-    "modelPath": "./src/assets/model/narcos.glb"
+    "title": "9",
+    "artist": "Shades, Kerchak",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 66,
-    "title": "Numb Numb Juice",
-    "artist": "ScHoolboy Q",
-    "audio": "../../audio/Numb Numb Juice.mp3",
-    "coverart": "/BG_cover/numb.webp",
-    "modelPath": "./src/assets/model/numb.glb"
+    "title": "Shook Ones, Pt. II",
+    "artist": "Mobb Deep",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 67,
-    "title": "D BLOCK AFRIQUE",
-    "artist": "Dinos, Jolagreen23, La Mano 1.9",
-    "audio": "../../audio/D BLOCK AFRIQUE.mp3",
-    "coverart": "/BG_cover/dinos.webp",
-    "modelPath": "./src/assets/model/block.glb",
-    "scrollText": true
+    "title": "Lean On",
+    "artist": "Major Lazer, MØ, DJ Snake",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 68,
-    "title": "LINLIN",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Skyclub",
+    "artist": "Népal",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 69,
-    "title": "NELICK",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Gun salute",
+    "artist": "Kaaris",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 70,
-    "title": "BAD!",
-    "artist": "Folie's",
-    "audio": "../../audio/BAD!.mp3",
-    "coverart": "/BG_cover/folie.webp",
-    "modelPath": "./src/assets/model/folies.glb"
+    "title": "barcelona92",
+    "artist": "Green Montana, SDM",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 71,
-    "title": "On the Low",
-    "artist": "Burna Boy",
-    "audio": "../../audio/On the Low.mp3",
-    "coverart": "/BG_cover/onthelow.webp",
-    "modelPath": "./src/assets/model/burna.glb"
+    "title": "Rainfall (Praise You)",
+    "artist": "Tom Santa",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 72,
-    "title": "Plain Jane",
-    "artist": "A$AP Ferg",
-    "audio": "../../audio/Plain Jane.mp3",
-    "coverart": "/BG_cover/Plaine.webp",
-    "modelPath": "./src/assets/model/plain.glb"
+    "title": "Talk To You (ft. 54 Ultra)",
+    "artist": "ANOTR, 54 Ultra",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 73,
-    "title": "Skyclub",
-    "artist": "Népal",
-    "audio": "../../audio/Skyclub.mp3",
-    "coverart": "/BG_cover/skyclub.webp",
-    "modelPath": "./src/assets/model/skyclub.glb"
+    "title": "AhGars!",
+    "artist": "Josman",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 74,
-    "title": "Million reason",
-    "artist": "Lady Gaga",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Consideration",
+    "artist": "Rihanna, SZA",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 75,
-    "title": "Pololo",
-    "artist": "MHD, Tiakola",
-    "audio": "../../audio/Pololo.mp3",
-    "coverart": "/BG_cover/pololo.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/mhd.glb"
+    "title": "WUSYANAME (feat. Youngboy Never Broke Again & Ty Dolla $ign)",
+    "artist": "Tyler, The Creator, YoungBoy Never Broke Again, Ty Dolla $ign",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 76,
-    "title": "PONA NINI",
-    "artist": "Tiakola ft. Genezio & Prototype",
-    "audio": "../../audio/PONA NINI.mp3",
-    "coverart": "/BG_cover/pona.webp",
-    "modelPath": "./src/assets/model/tiak.glb",
-    "scrollText": true
+    "title": "Cinq heures du matin",
+    "artist": "Jazzy Bazz",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 77,
-    "title": "Ce soir",
-    "artist": "Doums, Nekfeu, Nae",
-    "audio": "../../audio/Ce soir.mp3",
-    "coverart": "/BG_cover/soir.webp",
-    "modelPath": "./src/assets/model/soir.glb"
+    "title": "Illegal",
+    "artist": "PinkPantheress",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 78,
-    "title": "Riri",
-    "artist": "Aminé",
-    "audio": "../../audio/Riri.mp3",
-    "coverart": "/BG_cover/riri.webp",
-    "modelPath": "./src/assets/model/riri.glb"
+    "title": "Victory Lap",
+    "artist": "Fred again.., Skepta, PlaqueBoyMax",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 79,
-    "title": "GIRL LIKE ME",
-    "artist": "Black Eyed Peas ft shakira",
-    "audio": "../../audio/GIRL LIKE ME.mp3",
-    "coverart": "/BG_cover/ritmo.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/ritmo.glb"
+    "title": "Mec 2 Panam (has to be you)",
+    "artist": "JRK 19, Thiago Sub",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 80,
-    "title": "Abeille",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Wyclef Jean",
+    "artist": "Young Thug",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 81,
-    "title": "Saturday Night",
-    "artist": "2 Chainz",
-    "audio": "../../audio/Saturday Night.mp3",
-    "coverart": "/BG_cover/saturday.webp",
-    "modelPath": "./src/assets/model/saturday.glb"
+    "title": "Fuck Love",
+    "artist": "XXXTENTACION, Trippie Redd",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 82,
-    "title": "REDESCENDS",
-    "artist": "SDM",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Chico",
+    "artist": "S.Pri Noir",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 83,
-    "title": "Haut Standing",
-    "artist": "SCH",
-    "audio": "../../audio/Haut standing.mp3",
-    "coverart": "/BG_cover/shc.webp",
-    "modelPath": "./src/assets/model/sch.glb"
+    "title": "IVERSON",
+    "artist": "Laylow",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 84,
-    "title": "Shook Ones, Pt. II",
-    "artist": "Mobb Deep",
-    "audio": "../../audio/Shook Ones, Pt. II.mp3",
-    "coverart": "/BG_cover/shook.webp",
-    "modelPath": "./src/assets/model/shook.glb"
+    "title": "VIN ITALIEN",
+    "artist": "Yvnnis",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 85,
-    "title": "The Matrix",
-    "artist": "SkiMask The Slump God",
-    "audio": "../../audio/The Matrix.mp3",
-    "coverart": "/BG_cover/skimatrix.webp",
-    "modelPath": "./src/assets/model/matrix.glb"
+    "title": "OG",
+    "artist": "Genezio, Niska",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 86,
-    "title": "Starboy",
-    "artist": "The Weeknd ft. Daft Punk",
-    "audio": "../../audio/Starboy.mp3",
-    "coverart": "/BG_cover/starboy.webp",
-    "modelPath": "./src/assets/model/starboy.glb"
+    "title": "Tombolo",
+    "artist": "Kalash",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 87,
-    "title": "One thing",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "PUNK TACTICS",
+    "artist": "Joey Valence & Brae",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 88,
-    "title": "Summertime Sadness",
-    "artist": "Lana Del Rey",
-    "audio": "../../audio/Summertime Sadness.mp3",
-    "coverart": "/BG_cover/summertime.webp",
-    "modelPath": "./src/assets/model/lana.glb"
+    "title": "Hoe Cakes",
+    "artist": "MF DOOM",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 89,
-    "title": "Sundance",
-    "artist": "Népal",
-    "audio": "../../audio/Sundance.mp3",
-    "coverart": "/BG_cover/sundance.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/sundance.glb"
+    "title": "Pélican",
+    "artist": "L2B",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 90,
-    "title": "Wyclef Jean",
-    "artist": "Young Thug",
-    "audio": "../../audio/Wyclef Jean.mp3",
-    "coverart": "/BG_cover/thugger.webp",
-    "modelPath": "./src/assets/model/thugger.glb"
+    "title": "Skyfall",
+    "artist": "Adele",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 91,
-    "title": "Tombolo",
-    "artist": "Kalash",
-    "audio": "../../audio/Tombolo.mp3",
-    "coverart": "/BG_cover/tombolo.webp",
-    "modelPath": "./src/assets/model/kalash.glb"
+    "title": "Plain Jane",
+    "artist": "A$AP Ferg",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 92,
-    "title": "Hubert et Said",
-    "artist": "PLK",
-    "audio": "../../audio/Hubert et Saïd.mp3",
-    "coverart": "/BG_cover/hubert.webp",
-    "modelPath": "./src/assets/model/plk.glb"
+    "title": "Codéine 19",
+    "artist": "Hamza",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 93,
-    "title": "Petit coeur",
-    "artist": "13 Block",
-    "audio": "../../audio/Petit cœur.mp3",
-    "coverart": "/BG_cover/petit.webp",
-    "modelPath": "./src/assets/model/13.glb"
+    "title": "EL GEMANO",
+    "artist": "Genezio, La Mano 1.9",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 94,
-    "title": "Woman",
-    "artist": "Doja Cat",
-    "audio": "../../audio/Woman.mp3",
-    "coverart": "/BG_cover/woman.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/woman.glb"
+    "title": "BAD!",
+    "artist": "Folie's",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 95,
-    "title": "FINIS LES ",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "FASHION DESIGNA",
+    "artist": "Theodora",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 96,
-    "title": "From The Start",
-    "artist": "LAUFEY",
-    "audio": "../../audio/From The Start.mp3",
-    "coverart": "/BG_cover/laufey.webp",
-    "modelPath": "./src/assets/model/laufey.glb"
+    "title": "KILLCAM",
+    "artist": "NeS, Luther",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 97,
-    "title": "WUSYANAME",
-    "artist": "Tyler The Creator ft NBA Youngboy & Ty Dolla $ign",
-    "audio": "../../audio/WUSYANAME (feat. Youngboy Never Broke Again & Ty Dolla $ign).mp3",
-    "coverart": "/BG_cover/wuyaname.webp",
-    "modelPath": "./src/assets/model/wus.glb",
-    "scrollText": true
+    "title": "One Thing",
+    "artist": "KiLLOWEN",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 98,
-    "title": "XO Tour Llif3",
-    "artist": "Lil Uzi Vert",
-    "audio": "../../audio/XO Tour Llif3.mp3",
-    "coverart": "/BG_cover/Xo.webp",
-    "modelPath": "./src/assets/model/xotour.glb"
+    "title": "03'",
+    "artist": "Sainté",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 99,
-    "title": "No Broke Boys",
-    "artist": "Disco Lines, Tinashe",
-    "audio": "../../audio/No Broke Boys.mp3",
-    "coverart": "/BG_cover/broke.webp",
-    "modelPath": "./src/assets/model/broke.glb"
+    "title": "CHAQUE JOUR DE LA SEMAINE",
+    "artist": "Green Montana",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 100,
     "title": "Sprinter",
     "artist": "Dave, Central Cee",
-    "audio": "../../audio/Sprinter.mp3",
-    "coverart": "/BG_cover/sprinter.webp",
-    "modelPath": "./src/assets/model/sprinter.glb"
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 101,
-    "title": "WE ON GO",
-    "artist": "BIA",
-    "audio": "../../audio/WE ON GO.mp3",
-    "coverart": "/BG_cover/BIA.webp",
-    "modelPath": "./src/assets/model/bia.glb"
+    "title": "NO BYSTANDERS",
+    "artist": "Travis Scott",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 102,
-    "title": "NEW DROP",
-    "artist": "Don Toliver",
-    "audio": "../../audio/NEW DROP.mp3",
-    "coverart": "/BG_cover/Don.webp",
-    "modelPath": "./src/assets/model/dontoliver.glb"
+    "title": "Riri",
+    "artist": "Aminé",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 103,
-    "title": "Twinz (Deep Cover 98)",
-    "artist": "Big pun, Fat Joe",
-    "audio": "../../audio/Twinz (Deep Cover 98) (feat. Fat Joe).mp3",
-    "coverart": "/BG_cover/pun.webp",
-    "modelPath": "./src/assets/model/twinz.glb"
+    "title": "Hubert et Saïd",
+    "artist": "PLK",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 104,
-    "title": "TALK TO YOU",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "Hips Don't Lie (feat. Wyclef Jean)",
+    "artist": "Shakira, Wyclef Jean",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 105,
-    "title": "Can't Remember to Forget You",
-    "artist": "Shakira, Rihanna",
-    "audio": "../../audio/Can't Remember to Forget You (feat. Rihanna).mp3",
-    "coverart": "/BG_cover/cant.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/remember.glb",
-    "scrollText": true
+    "title": "Legend",
+    "artist": "Drake",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 106,
-    "title": "Crime ensoleillé",
-    "artist": "La Mano 1.9",
-    "audio": "../../audio/Crime ensoleillé.mp3",
-    "coverart": "/BG_cover/crime.webp",
-    "modelPath": "./src/assets/model/crime.glb"
+    "title": "Redescends",
+    "artist": "SDM, Tiakola",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 107,
-    "title": "could be wrong",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "From The Start",
+    "artist": "Laufey",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 108,
-    "title": "Pélican",
-    "artist": "L2B",
-    "audio": "../../audio/Pélican.mp3",
-    "coverart": "/BG_cover/pelican.webp",
-    "modelPath": "./src/assets/model/pelican.glb"
+    "title": "NO HOOK",
+    "artist": "La Fève",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 109,
-    "title": "Hello",
-    "artist": "Guy2Bezbar, JEY BROWNIE, Josman",
-    "audio": "../../audio/HELLO (feat. JEY BROWNIE & Josman).mp3",
-    "coverart": "/BG_cover/hello.webp",
-    "modelPath": "./src/assets/model/hello.glb",
-    "scrollText": true
+    "title": "Mwen An Sa",
+    "artist": "SKUNK, Tiitof, Leto",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 110,
-    "title": "Tango Hawai",
-    "artist": "Kekra, TIF",
-    "audio": "../../audio/Tango Hawaï.mp3",
-    "coverart": "/BG_cover/Tango.webp",
-    "modelPath": "./src/assets/model/tango.glb"
+    "title": "Vibe & Sun",
+    "artist": "Kekra",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 111,
-    "title": "barcelona92",
-    "artist": "Green Montana, SDM",
-    "audio": "../../audio/barcelona92.mp3",
-    "coverart": "/BG_cover/barcelona.webp",
-    "modelPath": "./src/assets/model/montana.glb"
+    "title": "Bad Bad Bad (feat. Lil Baby)",
+    "artist": "Young Thug, Lil Baby",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 112,
-    "title": "OG",
-    "artist": "Genezio, Nsika",
-    "audio": "../../audio/OG.mp3",
-    "coverart": "/BG_cover/OG.webp",
-    "modelPath": "./src/assets/model/og.glb"
+    "title": "Petit cœur",
+    "artist": "13 Block",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 113,
-    "title": "113 fout la merde",
-    "artist": "113, Thomas Bangalter",
-    "audio": "../../audio/113 fout la merde (feat. Thomas Bangalter).mp3",
-    "coverart": "/BG_cover/113.webp",
-    "modelPath": "./src/assets/model/113.glb"
+    "title": "Crime ensoleillé",
+    "artist": "La Mano 1.9, Tiakola",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 114,
-    "title": "NO HOOK",
-    "artist": "La fève",
-    "audio": "../../audio/NO HOOK.mp3",
-    "coverart": "/BG_cover/nohook.webp",
-    "modelPath": "./src/assets/model/hook.glb"
+    "title": "I Run",
+    "artist": "HAVEN., Kaitlin Aragon",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 115,
-    "title": "Codéine 19",
-    "artist": "Hamza",
-    "audio": "../../audio/Codéine 19.mp3",
-    "coverart": "/BG_cover/sadio.webp",
-    "modelPath": "./src/assets/model/hamza.glb"
+    "title": "Haut standing",
+    "artist": "SCH",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 116,
-    "title": "CHAQUE JOUR DE LA SEMAINE",
-    "artist": "Green Montana",
-    "audio": "../../audio/CHAQUE JOUR DE LA SEMAINE.mp3",
-    "coverart": "/BG_cover/nostalgia.webp",
-    "modelPath": "./src/assets/model/chaque.glb",
-    "scrollText": true
+    "title": "Champagne Shots",
+    "artist": "Sainté",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 117,
-    "title": "ROBBERY",
-    "artist": "A$AP Rocky, Doechii",
-    "audio": "../../audio/ROBBERY.mp3",
-    "coverart": "/BG_cover/robbery.webp",
-    "modelPath": "./src/assets/model/robbery.glb"
+    "title": "The Matrix",
+    "artist": "Ski Mask The Slump God",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 118,
-    "title": "Bad Bad Bad",
-    "artist": "Young Thug, Lil Baby",
-    "audio": "../../audio/Bad Bad Bad (feat. Lil Baby).mp3",
-    "coverart": "/BG_cover/bad.webp",
-    "modelPath": "./src/assets/model/badbad.glb"
+    "title": "Make It Rain",
+    "artist": "Pop Smoke, Rowdy Rebel",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 119,
-    "title": "Hoe Cakes",
-    "artist": "MF DOOM",
-    "audio": "../../audio/Hoe Cakes.mp3",
-    "coverart": "/BG_cover/hoe.webp",
-    "modelPath": "./src/assets/model/hoe.glb"
+    "title": "Tango Hawaï",
+    "artist": "Shades, Kekra, TIF",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 120,
-    "title": "ORANGE SODA",
-    "artist": "Baby Keem",
-    "audio": "../../audio/ORANGE SODA.mp3",
-    "coverart": "/BG_cover/baby.webp",
-    "modelPath": "./src/assets/model/orangesoda.glb"
+    "title": "MONACO",
+    "artist": "HOUDI",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 121,
-    "title": "Self Care",
-    "artist": "Mac Miller",
-    "audio": "../../audio/Self Care.mp3",
-    "coverart": "/BG_cover/miller.webp",
-    "modelPath": "./src/assets/model/miller.glb"
+    "title": "GARÇON",
+    "artist": "Luther",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 122,
-    "title": "VIN ITALIEN",
-    "artist": "Yvnnis",
-    "audio": "../../audio/VIN ITALIEN.mp3",
-    "coverart": "/BG_cover/vin.webp",
-    "modelPath": "./src/assets/model/yvnnis.glb"
+    "title": "pick your poison",
+    "artist": "KiLLOWEN",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 123,
-    "title": "Schémas Monotones",
-    "artist": "EDGE",
-    "audio": "../../audio/Schémas Monotones.mp3",
-    "coverart": "/BG_cover/edge.webp",
-    "modelPath": "./src/assets/model/edge.glb"
+    "title": "No Broke Boys",
+    "artist": "Disco Lines, Tinashe",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 124,
-    "title": "2MS",
-    "artist": "Nemzzz",
-    "audio": "../../audio/2MS.mp3",
-    "coverart": "/BG_cover/nemz.webp",
-    "backgroundPosition": "top",
-    "modelPath": "./src/assets/model/nemzz.glb"
+    "title": "HELLO (feat. JEY BROWNIE & Josman)",
+    "artist": "Guy2Bezbar, JEY BROWNIE, Josman",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 125,
-    "title": "rain fall",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb",
-    "scrollText": true
+    "title": "BLACK BALLOONS | 13LACK 13ALLOONZ [FEAT. TWELVE'LEN & GOLDLINK | TWELVE'LEN + GOLDL1NK]",
+    "artist": "Denzel Curry, Twelve'len, GoldLink",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 126,
-    "title": "E85",
-    "artist": "",
-    "audio": "../../audio/ics.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb",
-    "scrollText": true
+    "title": "Twinz (Deep Cover 98) (feat. Fat Joe)",
+    "artist": "Big Pun, Fat Joe",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   },
   {
     "id": 127,
-    "title": "Adele",
-    "artist": "",
-    "audio": "../../audio/.mp3",
-    "coverart": "/BG_cover/.webp",
-    "modelPath": "./src/assets/model/.glb"
+    "title": "21 Questions",
+    "artist": "50 Cent, Nate Dogg",
+    "audio": "",
+    "coverart": "/BG_cover/",
+    "backgroundPosition": "center",
+    "modelPath": "./src/assets/model/"
   }
 ]
