@@ -6,7 +6,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/It's%20A%20Vibe.flac",
     "coverart": "/BG_cover/2chainz.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/2chainz.glb",
+    "modelPath": "/model/2chainz.glb",
     "scrollText": true
   },
   {
@@ -16,7 +16,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/ORANGE%20SODA.flac",
     "coverart": "/BG_cover/babykeem.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/babykeem.glb"
+    "modelPath": "/model/babykeem.glb"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Juicy.flac",
     "coverart": "/BG_cover/biggie.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/biggie.glb",
+    "modelPath": "/model/biggie.glb",
     "scrollText": true,
     "textColor": "#000000"
   },
@@ -36,7 +36,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/On%20the%20Low.flac",
     "coverart": "/BG_cover/burnaboy.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/burnaboy.glb"
+    "modelPath": "/model/burnaboy.glb"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Pololo.flac",
     "coverart": "/BG_cover/mhd.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/mhd.glb"
+    "modelPath": "/model/mhd.glb"
   },
   {
     "id": 5,
@@ -54,7 +54,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/DtMF.flac",
     "coverart": "/BG_cover/badbunny.webp",
     "backgroundPosition": "bottom",
-    "modelPath": "model/badbunny.glb"
+    "modelPath": "/model/badbunny.glb"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Summertime%20Sadness.flac",
     "coverart": "/BG_cover/lana.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/lana.glb"
+    "modelPath": "/model/lana.glb"
   },
   {
     "id": 7,
@@ -72,7 +72,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/10%20Toes.flac",
     "coverart": "/BG_cover/070phi.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/070phi.glb"
+    "modelPath": "/model/070phi.glb"
   },
   {
     "id": 8,
@@ -81,7 +81,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/D%20BLOCK%20AFRIQUE.flac",
     "coverart": "/BG_cover/dinos.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/dinos.glb",
+    "modelPath": "/model/dinos.glb",
     "scrollText": true
   },
   {
@@ -91,7 +91,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/BLACC_.flac",
     "coverart": "/BG_cover/linlin.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/linlin.glb"
+    "modelPath": "/model/linlin.glb"
   },
   {
     "id": 10,
@@ -100,7 +100,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/7%20rings.flac",
     "coverart": "/BG_cover/arianna.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/arianna.glb"
+    "modelPath": "/model/arianna.glb"
   },
   {
     "id": 11,
@@ -109,7 +109,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/FINIS-LES.flac",
     "coverart": "/BG_cover/lafeve.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/lafeve.glb"
+    "modelPath": "/model/lafeve.glb"
   },
   {
     "id": 12,
@@ -118,7 +118,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/C.R.E.A.M.flac",
     "coverart": "/BG_cover/wutang.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/wutang.glb",
+    "modelPath": "/model/wutang.glb",
     "scrollText": true
   },
   {
@@ -128,7 +128,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/PONA%20NINI.flac",
     "coverart": "/BG_cover/tiakola.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/tiakola.glb",
+    "modelPath": "/model/tiakola.glb",
     "scrollText": true
   },
   {
@@ -138,7 +138,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Sundance.flac",
     "coverart": "/BG_cover/nepal.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/nepal.glb"
+    "modelPath": "/model/nepal.glb"
   },
   {
     "id": 15,
@@ -147,7 +147,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Don't%20Start%20Now.flac",
     "coverart": "/BG_cover/dualipa.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/dualipa.glb"
+    "modelPath": "/model/dualipa.glb"
   },
   {
     "id": 16,
@@ -156,7 +156,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/E85.flac",
     "coverart": "/BG_cover/dontoliver.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/dontoliver.glb"
+    "modelPath": "/model/dontoliver.glb"
   },
   {
     "id": 17,
@@ -165,7 +165,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Fukk%20Sleep.flac",
     "coverart": "/BG_cover/asaprocky.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/asaprocky.glb",
+    "modelPath": "/model/asaprocky.glb",
     "scrollText": true,
     "textColor": "#000000"
   },
@@ -176,7 +176,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Can't%20Remember%20to%20Forget%20You.flac",
     "coverart": "/BG_cover/shakira.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/shakira.glb",
+    "modelPath": "/model/shakira.glb",
     "scrollText": true
   },
   {
@@ -186,7 +186,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/GATTI.flac",
     "coverart": "/BG_cover/jackboys.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/jackboys.glb",
+    "modelPath": "/model/jackboys.glb",
     "scrollText": true
   },
   {
@@ -196,7 +196,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Annihilate.flac",
     "coverart": "/BG_cover/metro.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/metro.glb",
+    "modelPath": "/model/metro.glb",
     "scrollText": true
   },
   {
@@ -206,7 +206,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/XO%20Tour%20Llif3.flac",
     "coverart": "/BG_cover/liluzivert.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/liluzivert.glb"
+    "modelPath": "/model/liluzivert.glb"
   },
   {
     "id": 22,
@@ -215,7 +215,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/4_44.flac",
     "coverart": "/BG_cover/jayz.webp",
     "backgroundPosition": "bottom",
-    "modelPath": "model/jayz.glb"
+    "modelPath": "/model/jayz.glb"
   },
   {
     "id": 23,
@@ -224,7 +224,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Sch%C3%A9mas%20Monotones.flac",
     "coverart": "/BG_cover/edge.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/edge.glb"
+    "modelPath": "/model/edge.glb"
   },
   {
     "id": 24,
@@ -233,7 +233,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/2MS.flac",
     "coverart": "/BG_cover/nemz.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/nemz.glb"
+    "modelPath": "/model/nemz.glb"
   },
   {
     "id": 25,
@@ -242,7 +242,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Cardigan.flac",
     "coverart": "/BG_cover/dontoliver2.webp",
     "backgroundPosition": "bottom",
-    "modelPath": "model/dontoliver2.glb"
+    "modelPath": "/model/dontoliver2.glb"
   },
   {
     "id": 26,
@@ -251,7 +251,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/NORMAL.flac",
     "coverart": "/BG_cover/fallon.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/fallon.glb"
+    "modelPath": "/model/fallon.glb"
   },
   {
     "id": 27,
@@ -260,7 +260,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/BXL%20ZOO.flac",
     "coverart": "/BG_cover/damso.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/damso.glb"
+    "modelPath": "/model/damso.glb"
   },
   {
     "id": 28,
@@ -269,7 +269,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Naughties.flac",
     "coverart": "/BG_cover/killowen.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/killowen.glb"
+    "modelPath": "/model/killowen.glb"
   },
   {
     "id": 29,
@@ -278,7 +278,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Count%20Me%20Out.flac",
     "coverart": "/BG_cover/kendricklamar.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/kendricklamar.glb"
+    "modelPath": "/model/kendricklamar.glb"
   },
   {
     "id": 30,
@@ -287,7 +287,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Narcos.flac",
     "coverart": "/BG_cover/migos.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/migos.glb"
+    "modelPath": "/model/migos.glb"
   },
   {
     "id": 31,
@@ -296,7 +296,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/GIRL%20LIKE%20ME.flac",
     "coverart": "/BG_cover/blackeyedpeas.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/blackeyedpeas.glb",
+    "modelPath": "/model/blackeyedpeas.glb",
     "scrollText": true
   },
   {
@@ -306,7 +306,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/NEW%20DROP.flac",
     "coverart": "/BG_cover/dontoliver3.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/dontoliver3.glb"
+    "modelPath": "/model/dontoliver3.glb"
   },
   {
     "id": 33,
@@ -315,7 +315,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Meridian.flac",
     "coverart": "/BG_cover/dave.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/dave.glb"
+    "modelPath": "/model/dave.glb"
   },
   {
     "id": 34,
@@ -324,7 +324,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Father%20Stretch%20My%20Hands%20Pt.%201.flac",
     "coverart": "/BG_cover/kanye.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/kanye.glb",
+    "modelPath": "/model/kanye.glb",
     "scrollText": true
   },
   {
@@ -334,7 +334,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/113%20fout%20la%20merde.flac",
     "coverart": "/BG_cover/113.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/113.glb",
+    "modelPath": "/model/113.glb",
     "scrollText": true
   },
   {
@@ -344,7 +344,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/91's.flac",
     "coverart": "/BG_cover/pnl.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/pnl.glb"
+    "modelPath": "/model/pnl.glb"
   },
   {
     "id": 37,
@@ -353,7 +353,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Killing%20Me%20Softly%20With%20His%20Song.flac",
     "coverart": "/BG_cover/fugees.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/fugees.glb",
+    "modelPath": "/model/fugees.glb",
     "scrollText": true
   },
   {
@@ -363,7 +363,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Mi%20Amor.flac",
     "coverart": "/BG_cover/hamza.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/hamza.glb"
+    "modelPath": "/model/hamza.glb"
   },
   {
     "id": 39,
@@ -372,7 +372,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Happier%20Than%20Ever.flac",
     "coverart": "/BG_cover/billieeilish.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/billieeilish.glb"
+    "modelPath": "/model/billieeilish.glb"
   },
   {
     "id": 40,
@@ -381,7 +381,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/ROBBERY.flac",
     "coverart": "/BG_cover/asaprocky2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/asaprocky2.glb",
+    "modelPath": "/model/asaprocky2.glb",
     "scrollText": true
   },
   {
@@ -391,7 +391,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Lush%20Life.flac",
     "coverart": "/BG_cover/zaralarsson.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/zaralarsson.glb"
+    "modelPath": "/model/zaralarsson.glb"
   },
   {
     "id": 42,
@@ -400,7 +400,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/No%20Lie.flac",
     "coverart": "/BG_cover/seanpaul.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/seanpaul.glb"
+    "modelPath": "/model/seanpaul.glb"
   },
   {
     "id": 43,
@@ -409,7 +409,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Pistol%20%26%20Zamal.flac",
     "coverart": "/BG_cover/ziak.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/ziak.glb"
+    "modelPath": "/model/ziak.glb"
   },
   {
     "id": 44,
@@ -418,7 +418,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Woman.flac",
     "coverart": "/BG_cover/dojacat.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/dojacat.glb"
+    "modelPath": "/model/dojacat.glb"
   },
   {
     "id": 45,
@@ -427,7 +427,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Abeille.flac",
     "coverart": "/BG_cover/darlingchouchou.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/darlingchouchou.glb",
+    "modelPath": "/model/darlingchouchou.glb",
     "textColor": "#0022FF"
   },
   {
@@ -437,7 +437,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/COULD%20BE%20WRONG.flac",
     "coverart": "/BG_cover/lostboyjay.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/lostboyjay.glb"
+    "modelPath": "/model/lostboyjay.glb"
   },
   {
     "id": 47,
@@ -446,7 +446,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/LOVE%20YOU.flac",
     "coverart": "/BG_cover/nonolagrinta.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/nonolagrinta.glb"
+    "modelPath": "/model/nonolagrinta.glb"
   },
   {
     "id": 48,
@@ -455,7 +455,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/MANON%20B.flac",
     "coverart": "/BG_cover/tiakola2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/tiakola2.glb"
+    "modelPath": "/model/tiakola2.glb"
   },
   {
     "id": 49,
@@ -464,7 +464,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Million%20Reasons.flac",
     "coverart": "/BG_cover/ladygaga.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/ladygaga.glb"
+    "modelPath": "/model/ladygaga.glb"
   },
   {
     "id": 50,
@@ -473,7 +473,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/WE%20ON%20GO.flac",
     "coverart": "/BG_cover/bia.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/bia.glb"
+    "modelPath": "/model/bia.glb"
   },
   {
     "id": 51,
@@ -482,7 +482,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Hugo%20Rodallega.flac",
     "coverart": "/BG_cover/concook.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/concook.glb"
+    "modelPath": "/model/concook.glb"
   },
   {
     "id": 52,
@@ -491,7 +491,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/NEW%20MAGIC%20WAND.flac",
     "coverart": "/BG_cover/tylerthecreator.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/tylerthecreator.glb"
+    "modelPath": "/model/tylerthecreator.glb"
   },
   {
     "id": 53,
@@ -500,7 +500,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Starboy.flac",
     "coverart": "/BG_cover/theweeknd.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/theweeknd.glb"
+    "modelPath": "/model/theweeknd.glb"
   },
   {
     "id": 54,
@@ -509,7 +509,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Numb%20Numb%20Juice.flac",
     "coverart": "/BG_cover/schoolboyq.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/schoolboyq.glb"
+    "modelPath": "/model/schoolboyq.glb"
   },
   {
     "id": 55,
@@ -518,7 +518,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/FAUX%20G.flac",
     "coverart": "/BG_cover/saboteur.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/saboteur.glb",
+    "modelPath": "/model/saboteur.glb",
     "scrollText": true
   },
   {
@@ -528,7 +528,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/STRaatos.flac",
     "coverart": "/BG_cover/huntrill.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/huntrill.glb"
+    "modelPath": "/model/huntrill.glb"
   },
   {
     "id": 57,
@@ -537,7 +537,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Self%20Care.flac",
     "coverart": "/BG_cover/macmiller.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/macmiller.glb"
+    "modelPath": "/model/macmiller.glb"
   },
   {
     "id": 58,
@@ -546,7 +546,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/JOYSTICK.flac",
     "coverart": "/BG_cover/nelick.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/nelick.glb",
+    "modelPath": "/model/nelick.glb",
     "scrollText": true
   },
   {
@@ -556,7 +556,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/BOOM%20BOOM.flac",
     "coverart": "/BG_cover/rsko.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/rsko.glb"
+    "modelPath": "/model/rsko.glb"
   },
   {
     "id": 60,
@@ -565,7 +565,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Costa%20Rica.flac",
     "coverart": "/BG_cover/jcole.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/jcole.glb",
+    "modelPath": "/model/jcole.glb",
     "scrollText": true
   },
   {
@@ -575,7 +575,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/ADIOS%2C%20TORNADO'S%20EFFECT.flac",
     "coverart": "/BG_cover/varnish.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/varnish.glb",
+    "modelPath": "/model/varnish.glb",
     "scrollText": true
   },
   {
@@ -585,7 +585,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Hitman%20Go.flac",
     "coverart": "/BG_cover/makala.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/makala.glb"
+    "modelPath": "/model/makala.glb"
   },
   {
     "id": 63,
@@ -594,7 +594,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Wasteman.flac",
     "coverart": "/BG_cover/vic.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/vic.glb"
+    "modelPath": "/model/vic.glb"
   },
   {
     "id": 64,
@@ -603,7 +603,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/They%20Don't%20Care%20About%20Us.flac",
     "coverart": "/BG_cover/michaeljackson.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/michaeljackson.glb",
+    "modelPath": "/model/michaeljackson.glb",
     "scrollText": true
   },
   {
@@ -613,7 +613,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/9.flac",
     "coverart": "/BG_cover/kerchak.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/kerchak.glb"
+    "modelPath": "/model/kerchak.glb"
   },
   {
     "id": 66,
@@ -622,7 +622,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Shook%20Ones%2C%20Pt.%20II.flac",
     "coverart": "/BG_cover/mobbdeep.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/mobbdeep.glb"
+    "modelPath": "/model/mobbdeep.glb"
   },
   {
     "id": 67,
@@ -631,7 +631,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Lean%20On.flac",
     "coverart": "/BG_cover/majorlazer.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/majorlazer.glb"
+    "modelPath": "/model/majorlazer.glb"
   },
   {
     "id": 68,
@@ -640,7 +640,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Skyclub.flac",
     "coverart": "/BG_cover/nepal2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/nepal2.glb"
+    "modelPath": "/model/nepal2.glb"
   },
   {
     "id": 69,
@@ -649,7 +649,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Gun%20salute.flac",
     "coverart": "/BG_cover/kaaris.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/kaaris.glb"
+    "modelPath": "/model/kaaris.glb"
   },
   {
     "id": 70,
@@ -658,7 +658,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/barcelona92.flac",
     "coverart": "/BG_cover/greenmontana.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/greenmontana.glb"
+    "modelPath": "/model/greenmontana.glb"
   },
   {
     "id": 71,
@@ -667,7 +667,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Rainfall%20(Praise%20You).flac",
     "coverart": "/BG_cover/tomsanta.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/tomsanta.glb",
+    "modelPath": "/model/tomsanta.glb",
     "textColor": "#000000"
   },
   {
@@ -677,7 +677,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Talk%20To%20You.flac",
     "coverart": "/BG_cover/anotr.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/anotr.glb",
+    "modelPath": "/model/anotr.glb",
     "scrollText": true
   },
   {
@@ -687,7 +687,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/AhGars!.flac",
     "coverart": "/BG_cover/josman.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/josman.glb"
+    "modelPath": "/model/josman.glb"
   },
   {
     "id": 74,
@@ -696,7 +696,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Consideration.flac",
     "coverart": "/BG_cover/rihanna.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/rihanna.glb"
+    "modelPath": "/model/rihanna.glb"
   },
   {
     "id": 75,
@@ -705,7 +705,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/WUSYANAME.flac",
     "coverart": "/BG_cover/tylerthecreator2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/tylerthecreator2.glb",
+    "modelPath": "/model/tylerthecreator2.glb",
     "scrollText": true
   },
   {
@@ -715,7 +715,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Cinq%20heures%20du%20matin.flac",
     "coverart": "/BG_cover/jazzybazz.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/jazzybazz.glb"
+    "modelPath": "/model/jazzybazz.glb"
   },
   {
     "id": 77,
@@ -724,7 +724,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Illegal.flac",
     "coverart": "/BG_cover/pinkpantheress.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/pinkpantheress.glb"
+    "modelPath": "/model/pinkpantheress.glb"
   },
   {
     "id": 78,
@@ -733,7 +733,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Victory%20Lap.flac",
     "coverart": "/BG_cover/fredagain.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/fredagain.glb",
+    "modelPath": "/model/fredagain.glb",
     "scrollText": true
   },
   {
@@ -743,7 +743,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Mec%202%20Panam%20(has%20to%20be%20you).flac",
     "coverart": "/BG_cover/jrk.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/jrk.glb",
+    "modelPath": "/model/jrk.glb",
     "scrollText": true
   },
   {
@@ -753,7 +753,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Wyclef%20Jean%20%5BExplicit%5D.flac",
     "coverart": "/BG_cover/youngthug2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/youngthug2.glb"
+    "modelPath": "/model/youngthug2.glb"
   },
   {
     "id": 81,
@@ -762,7 +762,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Fuck%20Love.flac",
     "coverart": "/BG_cover/xxxtentacion.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/xxxtentacion.glb",
+    "modelPath": "/model/xxxtentacion.glb",
     "scrollText": true
   },
   {
@@ -772,7 +772,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Chico.flac",
     "coverart": "/BG_cover/sprinoir.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/sprinoir.glb"
+    "modelPath": "/model/sprinoir.glb"
   },
   {
     "id": 83,
@@ -781,7 +781,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/IVERSON.flac",
     "coverart": "/BG_cover/laylow.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/laylow.glb"
+    "modelPath": "/model/laylow.glb"
   },
   {
     "id": 84,
@@ -790,7 +790,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/VIN%20ITALIEN.flac",
     "coverart": "/BG_cover/yvnnis.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/yvnnis.glb"
+    "modelPath": "/model/yvnnis.glb"
   },
   {
     "id": 85,
@@ -799,7 +799,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/OG.flac",
     "coverart": "/BG_cover/genezio.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/genezio.glb"
+    "modelPath": "/model/genezio.glb"
   },
   {
     "id": 86,
@@ -808,7 +808,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Tombolo.flac",
     "coverart": "/BG_cover/kalash.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/kalash.glb"
+    "modelPath": "/model/kalash.glb"
   },
   {
     "id": 87,
@@ -817,7 +817,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/PUNK%20TACTICS.flac",
     "coverart": "/BG_cover/joeyvalence.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/joeyvalence.glb",
+    "modelPath": "/model/joeyvalence.glb",
     "scrollText": true,
     "textColor": "#000000"
   },
@@ -828,7 +828,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Hoe%20Cakes.flac",
     "coverart": "/BG_cover/mfdoom.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/mfdoom.glb"
+    "modelPath": "/model/mfdoom.glb"
   },
   {
     "id": 89,
@@ -837,7 +837,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/P%C3%A9lican.flac",
     "coverart": "/BG_cover/l2b.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/l2b.glb"
+    "modelPath": "/model/l2b.glb"
   },
   {
     "id": 90,
@@ -846,7 +846,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Skyfall.flac",
     "coverart": "/BG_cover/adele.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/adele.glb"
+    "modelPath": "/model/adele.glb"
   },
   {
     "id": 91,
@@ -855,7 +855,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Plain%20Jane.flac",
     "coverart": "/BG_cover/asapferg.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/asapferg.glb"
+    "modelPath": "/model/asapferg.glb"
   },
   {
     "id": 92,
@@ -864,7 +864,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Cod%C3%A9ine%2019.flac",
     "coverart": "/BG_cover/hamza2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/hamza2.glb"
+    "modelPath": "/model/hamza2.glb"
   },
   {
     "id": 93,
@@ -873,7 +873,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/EL%20GEMANO.flac",
     "coverart": "/BG_cover/genezio2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/genezio2.glb"
+    "modelPath": "/model/genezio2.glb"
   },
   {
     "id": 94,
@@ -882,7 +882,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/BAD!.flac",
     "coverart": "/BG_cover/folie.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/folie.glb"
+    "modelPath": "/model/folie.glb"
   },
   {
     "id": 95,
@@ -891,7 +891,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/FASHION%20DESIGNA.flac",
     "coverart": "/BG_cover/theodora.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/theodora.glb"
+    "modelPath": "/model/theodora.glb"
   },
   {
     "id": 96,
@@ -900,7 +900,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/KILLCAM.flac",
     "coverart": "/BG_cover/nes.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/nes.glb",
+    "modelPath": "/model/nes.glb",
     "textColor": "#000000"
   },
   {
@@ -910,7 +910,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/One%20Thing.flac",
     "coverart": "/BG_cover/killowen2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/killowen2.glb"
+    "modelPath": "/model/killowen2.glb"
   },
   {
     "id": 98,
@@ -919,7 +919,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/03'.flac",
     "coverart": "/BG_cover/sainte.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/sainte.glb"
+    "modelPath": "/model/sainte.glb"
   },
   {
     "id": 99,
@@ -928,7 +928,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/CHAQUE%20JOUR%20DE%20LA%20SEMAINE.flac",
     "coverart": "/BG_cover/greenmontana2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/greenmontana2.glb",
+    "modelPath": "/model/greenmontana2.glb",
     "scrollText": true
   },
   {
@@ -938,7 +938,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Sprinter.flac",
     "coverart": "/BG_cover/centralcee.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/centralcee.glb"
+    "modelPath": "/model/centralcee.glb"
   },
   {
     "id": 101,
@@ -947,7 +947,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/NO%20BYSTANDERS.flac",
     "coverart": "/BG_cover/travisscott.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/travisscott.glb"
+    "modelPath": "/model/travisscott.glb"
   },
   {
     "id": 102,
@@ -956,7 +956,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Riri.flac",
     "coverart": "/BG_cover/amine.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/amine.glb"
+    "modelPath": "/model/amine.glb"
   },
   {
     "id": 103,
@@ -965,7 +965,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Hubert%20et%20Sa%C3%AFd.flac",
     "coverart": "/BG_cover/plk.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/plk.glb"
+    "modelPath": "/model/plk.glb"
   },
   {
     "id": 104,
@@ -974,7 +974,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Hips%20Don't%20Lie.flac",
     "coverart": "/BG_cover/shakira2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/shakira2.glb",
+    "modelPath": "/model/shakira2.glb",
     "scrollText": true
   },
   {
@@ -984,7 +984,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Legend.flac",
     "coverart": "/BG_cover/drake.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/drake.glb",
+    "modelPath": "/model/drake.glb",
     "textColor": "#000000"
   },
   {
@@ -994,7 +994,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Redescends.flac",
     "coverart": "/BG_cover/sdm.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/sdm.glb"
+    "modelPath": "/model/sdm.glb"
   },
   {
     "id": 107,
@@ -1003,7 +1003,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/From%20The%20Start.flac",
     "coverart": "/BG_cover/laufey.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/laufey.glb"
+    "modelPath": "/model/laufey.glb"
   },
   {
     "id": 108,
@@ -1012,7 +1012,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/NO%20HOOK.flac",
     "coverart": "/BG_cover/lafeve2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/lafeve2.glb"
+    "modelPath": "/model/lafeve2.glb"
   },
   {
     "id": 109,
@@ -1021,7 +1021,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Mwen%20An%20Sa.flac",
     "coverart": "/BG_cover/leto.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/leto.glb"
+    "modelPath": "/model/leto.glb"
   },
   {
     "id": 110,
@@ -1030,7 +1030,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Vibe%20%26%20Sun.flac",
     "coverart": "/BG_cover/kekra.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/kekra.glb"
+    "modelPath": "/model/kekra.glb"
   },
   {
     "id": 111,
@@ -1039,7 +1039,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Bad%20Bad%20Bad.flac",
     "coverart": "/BG_cover/youngthug.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/youngthug.glb"
+    "modelPath": "/model/youngthug.glb"
   },
   {
     "id": 112,
@@ -1048,7 +1048,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Petit%20c%C5%93ur.flac",
     "coverart": "/BG_cover/13block.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/13block.glb"
+    "modelPath": "/model/13block.glb"
   },
   {
     "id": 113,
@@ -1057,7 +1057,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Crime%20ensoleill%C3%A9.flac",
     "coverart": "/BG_cover/lamano.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/lamano.glb"
+    "modelPath": "/model/lamano.glb"
   },
   {
     "id": 114,
@@ -1066,7 +1066,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/I%20Run.flac",
     "coverart": "/BG_cover/haven.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/haven.glb",
+    "modelPath": "/model/haven.glb",
     "textColor": "#000000"
   },
   {
@@ -1076,7 +1076,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Haut%20standing.flac",
     "coverart": "/BG_cover/sch.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/sch.glb"
+    "modelPath": "/model/sch.glb"
   },
   {
     "id": 116,
@@ -1085,7 +1085,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Champagne%20Shots.flac",
     "coverart": "/BG_cover/sainte2.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/sainte2.glb"
+    "modelPath": "/model/sainte2.glb"
   },
   {
     "id": 117,
@@ -1094,7 +1094,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/The%20Matrix.flac",
     "coverart": "/BG_cover/skimask.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/skimask.glb",
+    "modelPath": "/model/skimask.glb",
     "textColor": "#000000"
   },
   {
@@ -1104,7 +1104,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Make%20It%20Rain.flac",
     "coverart": "/BG_cover/popsmoke.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/popsmoke.glb",
+    "modelPath": "/model/popsmoke.glb",
     "textColor": "#0ff000"
   },
   {
@@ -1114,7 +1114,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Tango%20Hawa%C3%AF.flac",
     "coverart": "/BG_cover/tif.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/tif.glb"
+    "modelPath": "/model/tif.glb"
   },
   {
     "id": 120,
@@ -1123,7 +1123,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/MONACO.flac",
     "coverart": "/BG_cover/houdi.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/houdi.glb"
+    "modelPath": "/model/houdi.glb"
   },
   {
     "id": 121,
@@ -1132,7 +1132,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/GAR%C3%87ON.flac",
     "coverart": "/BG_cover/luther.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/luther.glb"
+    "modelPath": "/model/luther.glb"
   },
   {
     "id": 122,
@@ -1141,7 +1141,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/pick%20your%20poison.flac",
     "coverart": "/BG_cover/killowen3.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/killowen3.glb"
+    "modelPath": "/model/killowen3.glb"
   },
   {
     "id": 123,
@@ -1150,7 +1150,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/No%20Broke%20Boys.flac",
     "coverart": "/BG_cover/discolines.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/discolines.glb"
+    "modelPath": "/model/discolines.glb"
   },
   {
     "id": 124,
@@ -1159,7 +1159,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/HELLO.flac",
     "coverart": "/BG_cover/guy2bezbar.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/guy2bezbar.glb",
+    "modelPath": "/model/guy2bezbar.glb",
     "scrollText": true
   },
   {
@@ -1169,7 +1169,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/BLACK%20BALLOONS%20_%2013LACK%2013ALLOONZ.flac",
     "coverart": "/BG_cover/denzelcurry.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/denzelcurry.glb",
+    "modelPath": "/model/denzelcurry.glb",
     "scrollText": true
   },
   {
@@ -1179,7 +1179,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Twinz%20(Deep%20Cover%2098).flac",
     "coverart": "/BG_cover/bigpun.webp",
     "backgroundPosition": "center",
-    "modelPath": "model/bigpun.glb"
+    "modelPath": "/model/bigpun.glb"
   },
   {
     "id": 127,
@@ -1188,6 +1188,6 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/21%20Questions.flac",
     "coverart": "/BG_cover/50cent.webp",
     "backgroundPosition": "top",
-    "modelPath": "model/50cent.glb"
+    "modelPath": "/model/50cent.glb"
   }
 ]
