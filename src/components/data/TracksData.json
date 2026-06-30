@@ -91,7 +91,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/BLACC_.flac",
     "coverart": "/BG_cover/linlin.webp",
     "backgroundPosition": "center",
-    "modelPath": "/model/linlin.glb"
+    "modelPath": "/model/Linlin.glb"
   },
   {
     "id": 10,
@@ -509,7 +509,7 @@
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Numb%20Numb%20Juice.flac",
     "coverart": "/BG_cover/schoolboyq.webp",
     "backgroundPosition": "center",
-    "modelPath": "/model/schoolboyq.glb"
+    "modelPath": "/model/schoolboyQ.glb"
   },
   {
     "id": 55,
