@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 import gsap from 'gsap'
-import tracksData from '../data/tracksData.json'
+import tracksData from '../data/TracksData.json'
 
 export default function initMobileScene(canvas, options = {}) {
   const scene = new THREE.Scene()
