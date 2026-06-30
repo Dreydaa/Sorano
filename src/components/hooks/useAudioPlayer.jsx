@@ -10,6 +10,7 @@ export const useAudioPlayer = () => {
   const [repeat, setRepeat] = useState(false);
   const [showCoverArt, setShowCoverArt] = useState(false);
   const [volume, setVolume] = useState(1);
+  const [currentTextColor, setCurrentTextColor] = useState('#ffffff')
 
   const [prevTrackIndex, setPrevTrackIndex] = useState(0);
 
@@ -108,13 +109,13 @@ export const useAudioPlayer = () => {
     }
   }, [currentTrackIndex, playlist]);
 
-  // const getRandomTrackIndex = () => {
-  //   let randomIndex;
-  //   do {
-  //     randomIndex = Math.floor(Math.random() * playlist.length);
-  //   } while (randomIndex === currentTrackIndex && playlist.length > 1);
-  //   return randomIndex;
-  // };
+  const getRandomTrackIndex = () => {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * playlist.length);
+    } while (randomIndex === currentTrackIndex && playlist.length > 1);
+    return randomIndex;
+  };
 
   const togglePlay = () => {
     if (isPlaying) {
@@ -128,30 +129,32 @@ export const useAudioPlayer = () => {
   };
 
   const handleNext = () => {
-    let newIndex;
-    if (shuffle) {
-      do {
-        newIndex = Math.floor(Math.random() * playlist.length);
-      } while (newIndex === currentTrackIndex && playlist.length > 1);
-    } else {
-      newIndex = (currentTrackIndex + 1) % playlist.length;
-    }
-    setCurrentTrackIndex(newIndex);
-    return newIndex;
-  };
+  let newIndex;
+  if (shuffle) {
+    do {
+      newIndex = Math.floor(Math.random() * playlist.length);
+    } while (newIndex === currentTrackIndex && playlist.length > 1);
+  } else {
+    newIndex = (currentTrackIndex + 1) % playlist.length;
+  }
+  setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
+  setCurrentTrackIndex(newIndex);
+  return newIndex;
+};
 
-  const handlePrevious = () => {
-    let newIndex;
-    if (shuffle) {
-      do {
-        newIndex = Math.floor(Math.random() * playlist.length);
-      } while (newIndex === currentTrackIndex && playlist.length > 1);
-    } else {
-      newIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-    }
-    setCurrentTrackIndex(newIndex);
-    return newIndex;
-  };
+const handlePrevious = () => {
+  let newIndex;
+  if (shuffle) {
+    do {
+      newIndex = Math.floor(Math.random() * playlist.length);
+    } while (newIndex === currentTrackIndex && playlist.length > 1);
+  } else {
+    newIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+  }
+  setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
+  setCurrentTrackIndex(newIndex);
+  return newIndex;
+};
 
   const handleTimeUpdate = (e) => {
     const newTime = parseFloat(e.target.value);
@@ -171,6 +174,7 @@ export const useAudioPlayer = () => {
           .play()
           .catch((e) => console.error("Playback failed:", e));
       }
+      setCurrentTextColor(track.textColor || '#ffffff')
     }
   };
 
@@ -181,7 +185,8 @@ export const useAudioPlayer = () => {
   return {
     isPlaying,
     currentTime,
-    setCurrentTrackIndex,
+    setCurrentTextColor,
+    currentTextColor,
     duration,
     currentTrack: playlist[currentTrackIndex] || {},
     currentCoverArt: playlist[currentTrackIndex]?.coverArt, // <-- Correction ici
@@ -202,5 +207,6 @@ export const useAudioPlayer = () => {
     playlist,
     volume,
     handleVolumeChange,
+    getRandomTrackIndex,
   };
 };

@@ -24,3 +24,42 @@
   height: 100vh;
   z-index: 5; /* Derrière le canvas */
 }
+
+.two_buttons {
+  position: fixed;
+  width: auto;
+  height: auto;
+  margin: 16px;
+  bottom: 0;
+  right: 0;
+  z-index: 15; /* Au-dessus du canvas */
+}
+
+.button {
+  color: #090909;
+  font-family: "Gotham", sans-serif;
+  padding: 0.5em 1.5em;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 0.9em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button:hover {
+  border: 1px solid white;
+}
+
+.button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+a.button {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}

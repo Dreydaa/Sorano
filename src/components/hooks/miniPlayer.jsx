@@ -21,7 +21,7 @@ const MiniPlayer = ({ playerProps }) => {
   } = playerProps;
 
   const [isVolumeOpen, setIsVolumeOpen] = useState(false);
-  const [volumePercent, setVolumePercent] = useState(80);
+  const [volumePercent, setVolumePercent] = useState(5);
 
   const volumeRef = useRef(null);
   const volumeTrackRef = useRef(null);
@@ -104,7 +104,7 @@ const MiniPlayer = ({ playerProps }) => {
           {/* On applique la classe de scroll dynamiquement selon le morceau actuel */}
           <div className={`music-player__title-track ${currentTrack?.scrollText ? 'music-player__title-track--scroll' : ''}`}>
 
-            <h1 className="music-player__title">
+            <h1 className="music-player__title" style={{ color: currentTrack?.textColor || '#ffffff' }}>
               <span>{currentTrack?.title || "Sélectionnez un titre"}</span>
               <span> - </span>
               <span>{currentTrack?.artist || "Artiste inconnu"}</span>
@@ -114,7 +114,7 @@ const MiniPlayer = ({ playerProps }) => {
 
             {/* Si scrollText est true, on duplique le texte pour créer la transition infinie */}
             {currentTrack?.scrollText && (
-              <h1 className="music-player__title" aria-hidden="true">
+              <h1 className="music-player__title" aria-hidden="true" style={{ color: currentTrack?.textColor || '#ffffff' }}>
                 <span>{currentTrack?.title || "Sélectionnez un titre"}</span>
                 <span> - </span>
                 <span>{currentTrack?.artist || "Artiste inconnu"}</span>
@@ -148,7 +148,7 @@ const MiniPlayer = ({ playerProps }) => {
               aria-label="Toggle repeat"
               onClick={toggleRepeat}
             >
-              <Repeat size={24} />
+              <Repeat size={24} strokeWidth={2}/>
             </button>
 
             <div className="music-player__controls-center">
@@ -157,7 +157,7 @@ const MiniPlayer = ({ playerProps }) => {
                 aria-label="Previous track"
                 onClick={handlePrevious}
               >
-                <SkipBack size={48} strokeWidth={1} />
+                <SkipBack size={48} strokeWidth={2} />
               </button>
 
               <button
@@ -167,9 +167,9 @@ const MiniPlayer = ({ playerProps }) => {
                 onClick={togglePlay}
               >
                 {isPlaying ? (
-                  <Pause size={64} strokeWidth={0.75} />
+                  <Pause size={64} strokeWidth={1.5} />
                 ) : (
-                  <Play size={64} strokeWidth={0.75} />
+                  <Play size={64} strokeWidth={1.5} />
                 )}
               </button>
 
@@ -178,7 +178,7 @@ const MiniPlayer = ({ playerProps }) => {
                 aria-label="Next track"
                 onClick={handleNext}
               >
-                <SkipForward size={48} strokeWidth={1} />
+                <SkipForward size={48} strokeWidth={2} />
               </button>
             </div>
 
@@ -188,7 +188,7 @@ const MiniPlayer = ({ playerProps }) => {
               aria-label="Toggle shuffle"
               onClick={toggleShuffle}
             >
-              <Shuffle size={24} />
+              <Shuffle size={24} strokeWidth={2}/>
             </button>
 
           </div>

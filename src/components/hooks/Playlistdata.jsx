@@ -11,7 +11,8 @@ const generatePlaylist = () => {
     coverArt: track.coverart,
     backgroundPosition: track.backgroundPosition || 'center',
     cubeIndex: track.id,
-    scrollText: track.scrollText || false
+    scrollText: track.scrollText || false,
+    textColor: track.textColor || '#ffffff'
   }));
 };
 

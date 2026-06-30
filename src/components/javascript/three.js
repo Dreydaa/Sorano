@@ -3,7 +3,6 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import GUI from "lil-gui";
 import tracksData from "../data/tracksData.json"; // ← Import du JSON
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
@@ -11,9 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function initScene(canvas, options = {}) {
   const scene = new THREE.Scene();
-  const gui = new GUI({ title: "Parallax Settings", width: 300 });
-  const cameraFolder = gui.addFolder("Camera");
-  cameraFolder.open();
 
   const gltfLoader = new GLTFLoader();
 
@@ -149,6 +145,10 @@ export default function initScene(canvas, options = {}) {
 
         if (onComplete) {
           onComplete();
+        }
+
+        if (options.onLoaded) {
+          options.onLoaded();
         }
       })
       .catch((error) => {
@@ -461,8 +461,8 @@ const handleScrollUnlock = () => {
     const totalLength = total * spacing;
 
     // Valeur de scroll virtuel (en unités Three.js)
-    const scrollSpeed = 0.08; // lerp factor (fluidité)
-    const wheelStrength = 0.8; // sensibilité molette
+    const scrollSpeed = 0.009; // lerp factor (fluidité)
+    const wheelStrength = 0.4; // sensibilité molette
 
     // Lerp dans la boucle animate
     const updateLoop = () => {
@@ -607,6 +607,8 @@ const handleScrollUnlock = () => {
 
   const controls = new OrbitControls(camera, canvas);
   controls.enabled = true;
+  controls.enablePan = false
+controls.enableRotate = false
 
   const ambientLight = new THREE.AmbientLight(0xffffff, 2);
   scene.add(ambientLight);
