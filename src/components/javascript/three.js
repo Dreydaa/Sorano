@@ -82,7 +82,7 @@ export default function initScene(canvas, options = {}) {
           const track = tracksData[i];
 
           // Récupérer le template du modèle pour ce track
-          const modelPath = track.modelPath || "./src/assets/model/9.glb"; // Fallback
+          const modelPath = track.modelPath || "/model/9.glb"; // Fallback
           const template = modelsMap.get(modelPath);
 
           if (!template) {
