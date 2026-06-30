@@ -27,8 +27,6 @@ export const getTrackById = (id) => {
   return playlist.find(track => track.id === id);
 };
 
-console.log('📀 Premier track chargé:', playlist[0]);
-console.log('📋 Vérification des positions:');
-playlist.forEach(track => {
-  console.log(`ID ${track.id}: ${track.title} → Position: ${track.backgroundPosition || 'non définie'}`);
-});
+if (import.meta.env.DEV) {
+  console.log('📀 Premier track chargé:', playlist[0]);
+}

@@ -22,141 +22,308 @@ export default function initScene(canvas, options = {}) {
   /**
    * NOUVELLE FONCTION : Charger tous les modèles uniques du JSON
    */
-  function loadUniqueModels() {
-    // Extraire tous les chemins de modèles uniques
-    const modelPaths = new Set();
-    tracksData.forEach((track) => {
-      if (track.modelPath) {
-        modelPaths.add(track.modelPath);
-      }
-    });
+  // function loadUniqueModels() {
+  //   // Extraire tous les chemins de modèles uniques
+  //   const modelPaths = new Set();
+  //   tracksData.forEach((track) => {
+  //     if (track.modelPath) {
+  //       modelPaths.add(track.modelPath);
+  //     }
+  //   });
 
-    console.log(`🔄 Chargement de ${modelPaths.size} modèles uniques...`);
+  //   console.log(`🔄 Chargement de ${modelPaths.size} modèles uniques...`);
 
-    // Charger tous les modèles en parallèle
-    const loadPromises = Array.from(modelPaths).map((path) => {
-      return new Promise((resolve, reject) => {
-        gltfLoader.load(
-          path,
-          (gltf) => {
-            console.log(`✅ Modèle chargé: ${path}`);
-            resolve({ path, scene: gltf.scene });
-          },
-          undefined,
-          (error) => {
-            console.error(`❌ Erreur sur ${path}:`, error);
-            reject(error);
-          },
-        );
-      });
-    });
+  //   // Charger tous les modèles en parallèle
+  //   const loadPromises = Array.from(modelPaths).map((path) => {
+  //     return new Promise((resolve, reject) => {
+  //       gltfLoader.load(
+  //         path,
+  //         (gltf) => {
+  //           console.log(`✅ Modèle chargé: ${path}`);
+  //           resolve({ path, scene: gltf.scene });
+  //         },
+  //         undefined,
+  //         (error) => {
+  //           console.error(`❌ Erreur sur ${path}:`, error);
+  //           reject(error);
+  //         },
+  //       );
+  //     });
+  //   });
 
-    return Promise.all(loadPromises);
-  }
+  //   return Promise.all(loadPromises);
+  // }
 
   /**
    * FONCTION MODIFIÉE : Créer la grille avec les modèles du JSON
    */
-  function createCubeGrid(onComplete) {
-    const count = tracksData.length; // 128 tracks = 128 modèles
-    const cubeGroup = new THREE.Group();
-    const cubesArray = [];
 
-    const targetWidth = 2.5;
-    const targetHeight = 2.5;
-    const targetDepth = 0.1;
+  // function createCubeGrid(onComplete) {
+  //   const count = tracksData.length; // 128 tracks = 128 modèles
+  //   const cubeGroup = new THREE.Group();
+  //   const cubesArray = [];
 
-    // Charger tous les modèles uniques
-    loadUniqueModels()
-      .then((loadedModels) => {
-        console.log(`✅ ${loadedModels.length} modèles chargés`);
+  //   const targetWidth = 2.5;
+  //   const targetHeight = 2.5;
+  //   const targetDepth = 0.1;
 
-        // Créer un Map pour accès rapide par chemin
-        const modelsMap = new Map();
-        loadedModels.forEach(({ path, scene }) => {
-          modelsMap.set(path, scene);
-        });
+  //   // Charger tous les modèles uniques
+  //   loadUniqueModels()
+  //     .then((loadedModels) => {
+  //       console.log(`✅ ${loadedModels.length} modèles chargés`);
 
-        // Créer les 128 instances
-        for (let i = 0; i < count; i++) {
-          const track = tracksData[i];
+  //       // Créer un Map pour accès rapide par chemin
+  //       // const modelsMap = new Map();
+  //       modelsMap = new Map();
+  //       loadedModels.forEach(({ path, scene }) => {
+  //         modelsMap.set(path, scene);
+  //       });
 
-          // Récupérer le template du modèle pour ce track
-          const modelPath = track.modelPath || "/model/9.glb"; // Fallback
-          const template = modelsMap.get(modelPath);
+  //       // Créer les 128 instances
+  //       for (let i = 0; i < count; i++) {
+  //         const track = tracksData[i];
 
-          if (!template) {
-            console.warn(`⚠️ Modèle non trouvé pour track ${i}: ${modelPath}`);
-            continue;
-          }
+  //         // Récupérer le template du modèle pour ce track
+  //         const modelPath = track.modelPath || "/model/9.glb"; // Fallback
+  //         const template = modelsMap.get(modelPath);
 
-          // Cloner le template
-          const modelClone = template.clone();
+  //         if (!template) {
+  //           console.warn(`⚠️ Modèle non trouvé pour track ${i}: ${modelPath}`);
+  //           continue;
+  //         }
 
-          // Calculer la bbox et centrer le modèle
-          const box = new THREE.Box3().setFromObject(modelClone);
-          const size = new THREE.Vector3();
-          const center = new THREE.Vector3();
-          box.getSize(size);
-          box.getCenter(center);
+  //         // Cloner le template
+  //         const modelClone = template.clone();
 
-          // Centrer la géométrie
-          modelClone.traverse((child) => {
-            if (child.isMesh) {
-              child.geometry.translate(-center.x, -center.y, -center.z);
-            }
-          });
+  //         // Calculer la bbox et centrer le modèle
+  //         const box = new THREE.Box3().setFromObject(modelClone);
+  //         const size = new THREE.Vector3();
+  //         const center = new THREE.Vector3();
+  //         box.getSize(size);
+  //         box.getCenter(center);
 
-          // Calculer le scale
-          const scaleX = targetWidth / size.x;
-          const scaleY = targetHeight / size.y;
-          const scaleZ = targetDepth / size.z;
-          const uniformScale = Math.min(scaleX, scaleY, scaleZ);
+  //         // Centrer la géométrie
+  //         modelClone.traverse((child) => {
+  //           if (child.isMesh) {
+  //             child.geometry.translate(-center.x, -center.y, -center.z);
+  //           }
+  //         });
 
-          modelClone.scale.set(uniformScale, uniformScale, uniformScale);
+  //         // Calculer le scale
+  //         const scaleX = targetWidth / size.x;
+  //         const scaleY = targetHeight / size.y;
+  //         const scaleZ = targetDepth / size.z;
+  //         const uniformScale = Math.min(scaleX, scaleY, scaleZ);
 
-          // Ombres et userData
-          modelClone.traverse((child) => {
-            if (child.isMesh) {
-              child.castShadow = true;
-              child.receiveShadow = true;
-              child.userData.index = i;
-              child.userData.trackId = track.id;
-              child.userData.modelPath = modelPath;
-            }
-          });
+  //         modelClone.scale.set(uniformScale, uniformScale, uniformScale);
 
-          // Position (identique aux cubes)
-          modelClone.position.set(i * 0, i * 1, -i * 2);
+  //         // Ombres et userData
+  //         modelClone.traverse((child) => {
+  //           if (child.isMesh) {
+  //             child.castShadow = true;
+  //             child.receiveShadow = true;
+  //             child.userData.index = i;
+  //             child.userData.trackId = track.id;
+  //             child.userData.modelPath = modelPath;
+  //           }
+  //         });
 
-          // UserData du modèle parent
-          modelClone.userData.originalPosition = modelClone.position.clone();
-          modelClone.userData.index = i;
-          modelClone.userData.zDepth = -i * 1.5;
-          modelClone.userData.trackId = track.id;
-          modelClone.userData.modelPath = modelPath;
+  //         // Position (identique aux cubes)
+  //         modelClone.position.set(i * 0, i * 1, -i * 2);
 
-          cubeGroup.add(modelClone);
-          cubesArray.push(modelClone);
-        }
+  //         // UserData du modèle parent
+  //         modelClone.userData.originalPosition = modelClone.position.clone();
+  //         modelClone.userData.index = i;
+  //         modelClone.userData.zDepth = -i * 1.5;
+  //         modelClone.userData.trackId = track.id;
+  //         modelClone.userData.modelPath = modelPath;
 
-        cubeGroup.position.set(0, -2, 5);
-        console.log(`✅ ${count} modèles créés et positionnés`);
+  //         cubeGroup.add(modelClone);
+  //         cubesArray.push(modelClone);
+  //       }
 
-        if (onComplete) {
-          onComplete();
-        }
+  //       cubeGroup.position.set(0, -2, 5);
+  //       console.log(`✅ ${count} modèles créés et positionnés`);
 
-        if (options.onLoaded) {
-          options.onLoaded();
-        }
-      })
-      .catch((error) => {
-        console.error("❌ Erreur lors du chargement des modèles:", error);
+  //       if (onComplete) {
+  //         onComplete();
+  //       }
+
+  //       if (options.onLoaded) {
+  //         options.onLoaded();
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("❌ Erreur lors du chargement des modèles:", error);
+  //     });
+
+  //   return { group: cubeGroup, cubes: cubesArray };
+  // }
+
+ // The shared cache for loaded models
+
+/**
+ * Loads a model for a specific placeholder cube.
+ * Returns a Promise that resolves when the model is loaded and swapped.
+ */
+// The shared cache for loaded models
+let modelsMap = new Map();
+
+/**
+ * 1. HELPER: Centers the model's geometry and scales it uniformly to fit the target dimensions.
+ * Returns the computed uniformScale for GSAP animations.
+ */
+function centerAndScaleModel(modelClone, index, trackId, modelPath) {
+  const targetWidth = 2.5;
+  const targetHeight = 2.5;
+  const targetDepth = 0.1;
+
+  // 1. Calculate the bounding box and center point
+  const box = new THREE.Box3().setFromObject(modelClone);
+  const size = new THREE.Vector3();
+  const center = new THREE.Vector3();
+  box.getSize(size);
+  box.getCenter(center);
+
+  // 2. Translate geometry to center it perfectly at the origin
+  modelClone.traverse((child) => {
+    if (child.isMesh) {
+      child.geometry.translate(-center.x, -center.y, -center.z);
+    }
+  });
+
+  // 3. Compute scale factors
+  const scaleX = targetWidth / size.x;
+  const scaleY = targetHeight / size.y;
+  const scaleZ = targetDepth / size.z;
+  const uniformScale = Math.min(scaleX, scaleY, scaleZ);
+
+  // 4. Apply uniform scale to the model clone
+  modelClone.scale.set(uniformScale, uniformScale, uniformScale);
+
+  // 5. Configure shadows and user data for raycasting
+  modelClone.traverse((child) => {
+    if (child.isMesh) {
+      child.castShadow = true;
+      child.receiveShadow = true;
+      child.userData.index = index;
+      child.userData.trackId = trackId;
+      child.userData.modelPath = modelPath;
+    }
+  });
+
+  return uniformScale;
+}
+/**
+ * 2. LOADER: Loads a model for a specific placeholder cube.
+ * Returns a Promise that resolves when the model is loaded and swapped.
+ */
+function lazyLoadModelForCube(cubeGroup) {
+  return new Promise((resolve) => {
+    cubeGroup.userData.isLoading = true;
+    const path = cubeGroup.userData.modelPath;
+    const index = cubeGroup.userData.index;
+    const trackId = cubeGroup.userData.trackId;
+
+    const applyModel = (template) => {
+      const modelClone = template.clone();
+      
+      // Calls the helper defined right above!
+      const targetScale = centerAndScaleModel(modelClone, index, trackId, path);
+
+      const placeholder = cubeGroup.getObjectByName("placeholder");
+      if (placeholder) {
+        cubeGroup.remove(placeholder);
+        placeholder.geometry.dispose();
+        placeholder.material.dispose();
+      }
+
+      cubeGroup.add(modelClone);
+      cubeGroup.userData.isModelLoaded = true;
+      cubeGroup.userData.isLoading = false;
+
+      modelClone.scale.set(0, 0, 0);
+      gsap.to(modelClone.scale, {
+        x: targetScale,
+        y: targetScale,
+        z: targetScale,
+        duration: 0.5,
+        ease: "power2.out"
       });
 
-    return { group: cubeGroup, cubes: cubesArray };
+      resolve();
+    };
+
+    if (modelsMap.has(path)) {
+      applyModel(modelsMap.get(path));
+    } else {
+      gltfLoader.load(path, (gltf) => {
+        modelsMap.set(path, gltf.scene);
+        applyModel(gltf.scene);
+      }, undefined, (err) => {
+        console.error(`Failed to lazy load model: ${path}`, err);
+        cubeGroup.userData.isLoading = false; 
+        resolve(); 
+      });
+    }
+  });
+}
+
+/**
+ * 3. GRID GENERATOR: Creates the tunnel of placeholders and preloads Track 0.
+ */
+function createCubeGrid(onComplete) {
+  const count = tracksData.length;
+  const cubeGroup = new THREE.Group();
+  const cubesArray = [];
+
+  const placeholderGeom = new THREE.BoxGeometry(2.5, 2.5, 0.1);
+  const placeholderMat = new THREE.MeshStandardMaterial({
+    color: 0x22222b,
+    roughness: 0.6,
+    metalness: 0.2,
+    transparent: true,
+    opacity: 0.8
+  });
+
+  for (let i = 0; i < count; i++) {
+    const track = tracksData[i];
+    const modelPath = track.modelPath || "/model/9.glb";
+
+    const placeholderGroup = new THREE.Group();
+    const placeholderMesh = new THREE.Mesh(placeholderGeom, placeholderMat);
+    placeholderMesh.name = "placeholder";
+    placeholderGroup.add(placeholderMesh);
+    placeholderGroup.position.set(i * 0, i * 1, -i * 2);
+
+    placeholderGroup.userData = {
+      originalPosition: placeholderGroup.position.clone(),
+      index: i,
+      trackId: track.id,
+      modelPath: modelPath,
+      isModelLoaded: false,
+      isLoading: false
+    };
+
+    cubeGroup.add(placeholderGroup);
+    cubesArray.push(placeholderGroup);
   }
+
+  cubeGroup.position.set(0, -2, 5);
+
+  if (cubesArray.length > 0) {
+    // Calls the loader function defined above!
+    lazyLoadModelForCube(cubesArray[0]).then(() => {
+      if (onComplete) onComplete();
+      if (options.onLoaded) options.onLoaded();
+    });
+  } else {
+    if (onComplete) onComplete();
+    if (options.onLoaded) options.onLoaded();
+  }
+
+  return { group: cubeGroup, cubes: cubesArray };
+}
 
   const { group: cubeGrid, cubes: cubesArray } = createCubeGrid(() => {
     setupParallaxScroll();
@@ -184,77 +351,79 @@ export default function initScene(canvas, options = {}) {
   const mouse = new THREE.Vector2();
 
   const onCubeClick = (event) => {
-  const rect = canvas.getBoundingClientRect()
-  mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1
-  mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+    mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
 
-  raycaster.setFromCamera(mouse, camera)
-  const intersects = raycaster.intersectObjects(cubesArray, true)
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(cubesArray, true);
 
-  if (intersects.length > 0) {
-    const clickedObject = intersects[0].object
+    if (intersects.length > 0) {
+      const clickedObject = intersects[0].object;
 
-    let modelToAnimate = clickedObject
-    while (modelToAnimate.parent && !cubesArray.includes(modelToAnimate)) {
-      modelToAnimate = modelToAnimate.parent
+      let modelToAnimate = clickedObject;
+      while (modelToAnimate.parent && !cubesArray.includes(modelToAnimate)) {
+        modelToAnimate = modelToAnimate.parent;
+      }
+
+      const cubeIndex = modelToAnimate.userData.index;
+
+      // Guard isTransitioning AVANT le save
+      if (isTransitioning) return;
+
+      // Save uniquement si on n'est pas déjà en transition
+      savedScrollY = scrollY;
+      savedTargetScrollY = targetScrollY;
+
+      cubesArray.forEach((cube) => {
+        cube.userData.savedScale = cube.scale.clone();
+      });
+
+      triggerModelTransition(cubeIndex);
+      scrollEnabled = false;
+      loopEnabled = false;
+      window.dispatchEvent(new CustomEvent("scrollLocked"));
+
+      if (options.onCubeClick) {
+        options.onCubeClick(cubeIndex);
+      }
     }
-
-    const cubeIndex = modelToAnimate.userData.index
-
-    // Guard isTransitioning AVANT le save
-    if (isTransitioning) return
-
-    // Save uniquement si on n'est pas déjà en transition
-    savedScrollY = scrollY
-    savedTargetScrollY = targetScrollY
-
-    cubesArray.forEach(cube => {
-      cube.userData.savedScale = cube.scale.clone()
-    })
-
-    triggerModelTransition(cubeIndex)
-    scrollEnabled = false
-    loopEnabled = false
-    window.dispatchEvent(new CustomEvent('scrollLocked'))
-
-    if (options.onCubeClick) {
-      options.onCubeClick(cubeIndex)
-    }
-  }
-}
+  };
 
   window.addEventListener("click", onCubeClick);
 
   // Après window.addEventListener('click', onCubeClick)
 
-const handleScrollUnlock = () => {
-  isTransitioning = false
-  scrollEnabled = true
-  scrollY = savedScrollY
-  targetScrollY = savedTargetScrollY
+  const handleScrollUnlock = () => {
+    isTransitioning = false;
+    scrollEnabled = true;
+    scrollY = savedScrollY;
+    targetScrollY = savedTargetScrollY;
 
-  // Reset caméra instantané sans animation
-  camera.position.set(9.68, 7.82, 20)
-  controls.target.set(0, 0, 0)
-  camera.lookAt(0, 0, 0)
-  controls.update()
-  controls.enabled = true
+    // Reset caméra instantané sans animation
+    camera.position.set(9.68, 7.82, 20);
+    controls.target.set(0, 0, 0);
+    camera.lookAt(0, 0, 0);
+    controls.update();
+    controls.enabled = true;
 
-  cubesArray.forEach(cube => {
-    cube.visible = true
-    if (cube.userData.savedScale) {
-      gsap.to(cube.scale, {
-        x: cube.userData.savedScale.x,
-        y: cube.userData.savedScale.y,
-        z: cube.userData.savedScale.z,
-        duration: 0.6,
-        ease: 'power2.out'
-      })
-    }
-  })
+    cubesArray.forEach((cube) => {
+      cube.visible = true;
+      if (cube.userData.savedScale) {
+        gsap.to(cube.scale, {
+          x: cube.userData.savedScale.x,
+          y: cube.userData.savedScale.y,
+          z: cube.userData.savedScale.z,
+          duration: 0.6,
+          ease: "power2.out",
+        });
+      }
+    });
 
-  setTimeout(() => { loopEnabled = true }, 600)
-}
+    setTimeout(() => {
+      loopEnabled = true;
+    }, 600);
+  };
 
   window.addEventListener("scrollUnlocked", handleScrollUnlock);
 
@@ -313,8 +482,6 @@ const handleScrollUnlock = () => {
           duration: 0.4,
           ease: "power2.out",
         });
-
-        canvas.style.cursor = "pointer";
 
         canvas.style.cursor = "pointer";
       }
@@ -391,10 +558,10 @@ const handleScrollUnlock = () => {
       0,
     );
 
-    // Calcul de la taille de zoom globale (comme ton code initial)
+    // The placeholder group has a base height of 2.5. We want it to fill 90% of the camera height.
     const viewHeight = camera.top - camera.bottom;
-    const targetSize = viewHeight * 0.9;
-    const scaleFactor = targetSize * 2;
+    const targetHeight = viewHeight * 0.9;
+    const scaleFactor = targetHeight / 4; // Since base size is 2.5, this multiplier makes it perfectly fit
 
     // On zoome et affiche le modèle sélectionné
     tl.to(
@@ -402,7 +569,7 @@ const handleScrollUnlock = () => {
       {
         x: scaleFactor,
         y: scaleFactor,
-        z: 1,
+        z: scaleFactor, // Scale uniformly to prevent 3D distortion
         duration: 1.2,
         ease: "expo.out",
       },
@@ -432,8 +599,8 @@ const handleScrollUnlock = () => {
     const nextCubeIndex = event.detail.cubeIndex;
     console.log("📢 Synchronisation 3D reçue pour l'index :", nextCubeIndex);
 
-    isTransitioning = false
-    
+    isTransitioning = false;
+
     triggerModelTransition(nextCubeIndex);
   };
   window.addEventListener("trackChanged", handleTrackChangeFromReact);
@@ -482,9 +649,25 @@ const handleScrollUnlock = () => {
 
         cube.position.z = z;
         cube.position.y = y + (cube.userData.hoverOffset || 0); // ← ajout offset hover
-        cube.visible = z > -30 && z < 15;
+
+        const isVisible = z > -30 && z < 15;
+        cube.visible = isVisible;
+
+        // LAZY LOADING TRIGGER
+        if (
+          isVisible &&
+          !cube.userData.isModelLoaded &&
+          !cube.userData.isLoading
+        ) {
+          lazyLoadModelForCube(cube);
+        }
       });
     };
+
+    /**
+ * Helper to center the model's geometry and scale it uniformly to fit the target dimensions.
+ * Returns the computed uniformScale so we can use it for GSAP animations.
+ */
 
     // Injecter dans la boucle animate existante
     // On stocke la fonction pour l'appeler dans animate()
@@ -607,8 +790,8 @@ const handleScrollUnlock = () => {
 
   const controls = new OrbitControls(camera, canvas);
   controls.enabled = true;
-  controls.enablePan = false
-controls.enableRotate = false
+  controls.enablePan = false;
+  controls.enableRotate = false;
 
   const ambientLight = new THREE.AmbientLight(0xffffff, 2);
   scene.add(ambientLight);
@@ -623,7 +806,7 @@ controls.enableRotate = false
     antialias: true,
   });
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
@@ -643,8 +826,14 @@ controls.enableRotate = false
   const handleResize = () => {
     sizes.width = window.innerWidth;
     sizes.height = window.innerHeight;
+
     camera.aspect = sizes.width / sizes.height;
+    camera.left = (frustumSize * aspect) / -2;
+    camera.right = (frustumSize * aspect) / 2;
+    camera.top = frustumSize / 2;
+    camera.bottom = frustumSize / -2;
     camera.updateProjectionMatrix();
+
     renderer.setSize(sizes.width, sizes.height);
   };
 
@@ -656,6 +845,10 @@ controls.enableRotate = false
     window.removeEventListener("trackChanged", handleTrackChangeFromReact);
     window.removeEventListener("scroll", onScroll, true);
     window.removeEventListener("scrollUnlocked", handleScrollUnlock);
+    window.removeEventListener("mousemove", onMouseMove);
+
+    if (parallaxSettings._cleanup) parallaxSettings._cleanup();
+    renderer.dispose();
 
     scene.remove(cubeGrid);
     cubesArray.forEach((model) => {
@@ -671,6 +864,23 @@ controls.enableRotate = false
       });
     });
 
+    // Dispose original template models
+    if (modelsMap) {
+      modelsMap.forEach((templateScene) => {
+        templateScene.traverse((child) => {
+          if (child.geometry) child.geometry.dispose();
+          if (child.material) {
+            if (Array.isArray(child.material)) {
+              child.material.forEach((m) => m.dispose());
+            } else {
+              child.material.dispose();
+            }
+          }
+        });
+      });
+      modelsMap.clear();
+    }
+
     if (scrollTimeline) scrollTimeline.kill();
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 
@@ -678,6 +888,8 @@ controls.enableRotate = false
     if (scrollContainer) {
       scrollContainer.remove();
     }
+    dracoLoader.dispose();
     renderer.dispose();
+    controls.dispose();
   };
 }

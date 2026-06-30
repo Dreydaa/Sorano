@@ -12,8 +12,6 @@ export const useAudioPlayer = () => {
   const [volume, setVolume] = useState(1);
   const [currentTextColor, setCurrentTextColor] = useState('#ffffff')
 
-  const [prevTrackIndex, setPrevTrackIndex] = useState(0);
-
   const audioRef = useRef(new Audio());
 
   useEffect(() => {
@@ -29,12 +27,6 @@ export const useAudioPlayer = () => {
 
 // A. Calcul en temps réel de la position (État dérivé)
   const currentBgPosition = playlist[currentTrackIndex]?.backgroundPosition || "center";
-
-  // B. Synchronisation de la cover (Méthode recommandée par React pour éviter les rendus en cascade)
-  if (currentTrackIndex !== prevTrackIndex) {
-    setPrevTrackIndex(currentTrackIndex);
-    setShowCoverArt(true);
-  }
 
   // C. Effet secondaire pur : Notifier la scène externe Three.js (Zéro setState ici !)
   useEffect(() => {
@@ -65,6 +57,8 @@ export const useAudioPlayer = () => {
             return (prev + 1) % playlist.length;
           }
         });
+        setShowCoverArt(true)
+
       }
     };
 
@@ -78,22 +72,6 @@ export const useAudioPlayer = () => {
       audio.removeEventListener("ended", handleEnded);
     };
   }, [repeat, shuffle, playlist.length]);
-
-  useEffect(() => {
-    let animationFrameId;
-    const updateProgress = () => {
-      if (audioRef.current) {
-        setCurrentTime(audioRef.current.currentTime);
-      }
-      animationFrameId = requestAnimationFrame(updateProgress);
-    };
-
-    animationFrameId = requestAnimationFrame(updateProgress);
-
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
 
   useEffect(() => {
     if (playlist.length > 0 && playlist[currentTrackIndex]?.audioSrc) {
@@ -139,6 +117,7 @@ export const useAudioPlayer = () => {
   }
   setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
   setCurrentTrackIndex(newIndex);
+  setShowCoverArt(true)
   return newIndex;
 };
 
@@ -153,6 +132,7 @@ const handlePrevious = () => {
   }
   setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
   setCurrentTrackIndex(newIndex);
+  setShowCoverArt(true)
   return newIndex;
 };
 
@@ -166,7 +146,6 @@ const handlePrevious = () => {
     const track = getCubeTrack(cubeIndex);
     if (track) {
       setCurrentTrackIndex(track.id);
-      setShowCoverArt(track.coverArt);
       setShowCoverArt(true);
       if (!isPlaying) {
         setIsPlaying(true);
