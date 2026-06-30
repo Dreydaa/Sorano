@@ -3,7 +3,7 @@ import initMobileScene from '../javascript/mobileThree'
 import { useAudioPlayer } from './useAudioPlayer'
 import CoverArtBackground from './coverArtBackground'
 import MobilePlayer from './miniPlayer'
-import '../styles/miniplayer.css' // Ajuste le chemin selon ton arborescence
+import '../styles/miniPlayer.css' // Ajuste le chemin selon ton arborescence
 
 function MobileApp() {
   const canvasRef = useRef(null)

@@ -3,7 +3,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import tracksData from "../data/tracksData.json"; // ← Import du JSON
+import tracksData from "../data/TracksData.json"; // ← Import du JSON
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 gsap.registerPlugin(ScrollTrigger);
