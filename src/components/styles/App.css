@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.sorano {
+  height: 132px;
+  padding: 10px 10px;
+}
+
 /* Canvas Three.js */
 .webgl {
   position: fixed;
@@ -25,7 +30,7 @@
   z-index: 5; /* Derrière le canvas */
 }
 
-.two_buttons {
+.contact-container {
   position: fixed;
   width: auto;
   height: auto;

@@ -74,7 +74,9 @@ function DesktopApp() {
       <LoadingScreen isLoading={isLoading} />
       <canvas ref={canvasRef} className="webgl" />
 
-      <div className='two_buttons'>
+      <img className='sorano' src='Sorano-preview.webp' alt='Sorano Logo' />
+
+      <div className='contact-container'>
         <a className='button' href='https://www.linkedin.com/in/alan-bultel-8a5a93258' target='_blank'>
           <span>Contact me</span>
         </a>

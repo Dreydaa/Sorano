@@ -445,7 +445,7 @@ function createCubeGrid(onComplete) {
   };
 
   window.addEventListener("scroll", onScroll, true); // true = capture phase, attrape tous les scrolls
-
+  
   const onMouseMove = (event) => {
     if (!scrollEnabled) return;
     const rect = canvas.getBoundingClientRect();

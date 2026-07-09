@@ -462,3 +462,37 @@
     height: 28px;
   }
 }
+
+/* ─── MOBILE COVER IMAGE IN PLAYER MODE ─── */
+.mobile-cover-image-container {
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  width: 75%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: fadeInCover 0.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  pointer-events: none; /* Let clicks pass through if needed, though back button is on top */
+}
+
+.mobile-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+@keyframes fadeInCover {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

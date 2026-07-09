@@ -1,0 +1,33 @@
+.sorano {
+  height: 96px;
+  image-rendering: optimizeQuality;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-container {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15; /* Au-dessus du canvas */
+}
+
+.button {
+  color: #090909;
+  font-family: "Gotham", sans-serif;
+  padding: 0.5em 1.5em;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 0.9em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow:
+    6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+}
