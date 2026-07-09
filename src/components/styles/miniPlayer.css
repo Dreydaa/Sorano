@@ -365,8 +365,8 @@
   .music-player {
     max-width: 92%;
     bottom: 24px;
-    padding: 1rem 1.1rem;
-    gap: 0.75rem;
+    padding: 1.1rem 1.1rem;
+    gap: 0.25rem;
     border-radius: 16px;
   }
 
@@ -384,7 +384,7 @@
   }
 
   .music-player__progress-bar {
-    height: 10px;
+    height: 11px;
   }
 
   .music-player__progress-fill {
@@ -421,6 +421,7 @@
   }
 
   .music-player__btn--volume svg {
+    display: none;
     width: 18px;
     height: 18px;
   }

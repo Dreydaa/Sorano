@@ -61,7 +61,7 @@
     "title": "Summertime Sadness",
     "artist": "Lana Del Rey",
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Summertime%20Sadness.flac",
-    "coverart": "/BG_cover/lana.webp",
+    "coverart": "/BG_cover/Lana.webp",
     "backgroundPosition": "center",
     "modelPath": "/model/Lana.glb"
   },
@@ -89,7 +89,7 @@
     "title": "BLACC*",
     "artist": "LinLin",
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/BLACC_.flac",
-    "coverart": "/BG_cover/linlin.webp",
+    "coverart": "/BG_cover/Linlin.webp",
     "backgroundPosition": "center",
     "modelPath": "/model/Linlin.glb"
   },
@@ -507,7 +507,7 @@
     "title": "Numb Numb Juice",
     "artist": "ScHoolboy Q",
     "audio": "https://pub-39a161236e014bdc8fe649c7e58bf5d7.r2.dev/audio/Numb%20Numb%20Juice.flac",
-    "coverart": "/BG_cover/schoolboyq.webp",
+    "coverart": "/BG_cover/schoolboyQ.webp",
     "backgroundPosition": "center",
     "modelPath": "/model/schoolboyQ.glb"
   },

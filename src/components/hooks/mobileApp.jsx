@@ -158,10 +158,8 @@ function MobileApp() {
             playerProps={{
               ...playerProps,
               handleNext: wrappedHandleNext,
-              handlePrevious: wrappedHandlePrevious,
+              handlePrevious: wrappedHandlePrevious, showBack, handleBack
             }}
-            showBack={showBack}
-            onBack={handleBack}
           />
         </div>
       )}

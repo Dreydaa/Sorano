@@ -6,6 +6,7 @@ export const useAudioPlayer = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const [debouncedTrackIndex, setDebouncedTrackIndex] = useState(0);
   const [shuffle, setShuffle] = useState(false);
   const [repeat, setRepeat] = useState(false);
   const [showCoverArt, setShowCoverArt] = useState(false);
@@ -25,8 +26,15 @@ export const useAudioPlayer = () => {
     setVolume(newVolume);
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedTrackIndex(currentTrackIndex);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [currentTrackIndex]);
+
 // A. Calcul en temps réel de la position (État dérivé)
-  const currentBgPosition = playlist[currentTrackIndex]?.backgroundPosition || "center";
+  const currentBgPosition = playlist[debouncedTrackIndex]?.backgroundPosition || "center";
 
   // C. Effet secondaire pur : Notifier la scène externe Three.js (Zéro setState ici !)
   useEffect(() => {
@@ -74,8 +82,8 @@ export const useAudioPlayer = () => {
   }, [repeat, shuffle, playlist.length]);
 
   useEffect(() => {
-    if (playlist.length > 0 && playlist[currentTrackIndex]?.audioSrc) {
-      const currentTrack = playlist[currentTrackIndex];
+    if (playlist.length > 0 && playlist[debouncedTrackIndex]?.audioSrc) {
+      const currentTrack = playlist[debouncedTrackIndex];
 
       audioRef.current.src = currentTrack.audioSrc;
 
@@ -85,7 +93,7 @@ export const useAudioPlayer = () => {
           .catch((e) => console.error("Playback failed:", e));
       }
     }
-  }, [currentTrackIndex, playlist]);
+  }, [debouncedTrackIndex, playlist]);
 
   const getRandomTrackIndex = () => {
     let randomIndex;
@@ -168,7 +176,7 @@ const handlePrevious = () => {
     currentTextColor,
     duration,
     currentTrack: playlist[currentTrackIndex] || {},
-    currentCoverArt: playlist[currentTrackIndex]?.coverArt, // <-- Correction ici
+    currentCoverArt: playlist[debouncedTrackIndex]?.coverArt, // <-- Use debounced track for image fetch
     currentBgPosition,
     showCoverArt,
     shuffle,

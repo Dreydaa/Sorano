@@ -37,9 +37,9 @@ export default function initMobileScene(canvas, options = {}) {
   // ─── Carousel layout constants ───
   const SLOT = {
     offLeft:  { x: -3.0, y: -0.5, z: -2 },
-    left:     { x: -2.25, y: -0.2, z: -1 },
-    center:   { x: 0,    y: 0.5,  z: 0 },
-    right:    { x: 2.25,  y: -0.2, z: -1 },
+    left:     { x: -2.25, y: -0.4, z: -1 },
+    center:   { x: 0,    y: 0.2,  z: 0 },
+    right:    { x: 2.25,  y: -0.4, z: -1 },
     offRight: { x: 3.0,  y: -0.5, z: -2 }
   }
   const SIDE_SCALE_FACTOR = 1

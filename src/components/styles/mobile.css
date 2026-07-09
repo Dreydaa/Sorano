@@ -7,7 +7,7 @@
 }
 
 .contact-container {
-  position: absolute;
+  position: fixed;
   width: auto;
   height: auto;
   left: 50%;
