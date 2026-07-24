@@ -87,10 +87,35 @@ const MiniPlayer = ({ playerProps }) => {
     const nextPercent = Math.max(0, Math.min(100, (clickX / rect.width) * 100));
     audioRef.current.currentTime = (nextPercent / 100) * duration;
   };
-  
+
+  const isDraggingProgress = useRef(false)
+
+  const getProgressFromEvent = (clientX) => {
+    if (!progressBarRef.current || !duration || !audioRef.current) return
+    const rect = progressBarRef.current.getBoundingClientRect()
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width))
+    audioRef.current.currentTime = (x / rect.width) * duration
+  }
+
+  const handleProgressTouchStart = (e) => {
+    e.stopPropagation() // ← empêche le swipe de track de se déclencher
+    isDraggingProgress.current = true
+    getProgressFromEvent(e.touches[0].clientX)
+  }
+
+  const handleProgressTouchMove = (e) => {
+    if (!isDraggingProgress.current) return
+    e.stopPropagation()
+    getProgressFromEvent(e.touches[0].clientX)
+  }
+
+  const handleProgressTouchEnd = () => {
+    isDraggingProgress.current = false
+  }
+
   return (
     <>
-    {showBack && (
+      {showBack && (
         <button
           className="back-btn"
           onClick={handleBack}
@@ -131,6 +156,9 @@ const MiniPlayer = ({ playerProps }) => {
             className="music-player__progress-bar"
             ref={progressBarRef}
             onClick={handleProgressClick}
+            onTouchStart={handleProgressTouchStart}
+            onTouchMove={handleProgressTouchMove}
+            onTouchEnd={handleProgressTouchEnd}
             style={{ cursor: 'pointer' }}
           >
             <div className="music-player__progress-bg"></div>
@@ -148,7 +176,7 @@ const MiniPlayer = ({ playerProps }) => {
               aria-label="Toggle repeat"
               onClick={toggleRepeat}
             >
-              <Repeat size={24} strokeWidth={2}/>
+              <Repeat size={24} strokeWidth={2} />
             </button>
 
             <div className="music-player__controls-center">
@@ -188,7 +216,7 @@ const MiniPlayer = ({ playerProps }) => {
               aria-label="Toggle shuffle"
               onClick={toggleShuffle}
             >
-              <Shuffle size={24} strokeWidth={2}/>
+              <Shuffle size={24} strokeWidth={2} />
             </button>
 
           </div>

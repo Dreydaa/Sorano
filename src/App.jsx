@@ -50,6 +50,8 @@ function DesktopApp() {
   const handleBack = () => {
     setShowBack(false)
     setShowCoverArt(false)
+    playerProps.audioRef.current?.pause()
+    playerProps.setIsPlaying(false)
     window.dispatchEvent(new CustomEvent('scrollUnlocked'))
   }
 

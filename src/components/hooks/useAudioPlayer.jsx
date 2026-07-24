@@ -195,5 +195,6 @@ const handlePrevious = () => {
     volume,
     handleVolumeChange,
     getRandomTrackIndex,
+    setIsPlaying,
   };
 };

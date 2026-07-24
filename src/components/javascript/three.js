@@ -279,6 +279,22 @@ export default function initScene(canvas, options = {}) {
     });
   }
 
+  function preloadAdjacentModels(centerIndex) {
+    const indices = [
+      (centerIndex + 1) % tracksData.length,
+      (centerIndex - 1 + tracksData.length) % tracksData.length,
+      (centerIndex + 2) % tracksData.length, // 2 d'avance au cas où
+      (centerIndex - 2 + tracksData.length) % tracksData.length,
+    ];
+
+    indices.forEach((idx) => {
+      const cube = cubesArray.find((c) => c.userData.index === idx);
+      if (cube && !cube.userData.isModelLoaded && !cube.userData.isLoading) {
+        lazyLoadModelForCube(cube);
+      }
+    });
+  }
+
   /**
    * 3. GRID GENERATOR: Creates the tunnel of placeholders and preloads Track 0.
    */
@@ -390,11 +406,11 @@ export default function initScene(canvas, options = {}) {
       scrollEnabled = false;
       loopEnabled = false;
       window.dispatchEvent(new CustomEvent("scrollLocked"));
-      
+
       if (options.onCubeClick) {
         options.onCubeClick(cubeIndex);
       }
-      displayedCubeIndex = cubeIndex
+      displayedCubeIndex = cubeIndex;
     }
   };
 
@@ -518,6 +534,7 @@ export default function initScene(canvas, options = {}) {
     isTransitioning = true;
     console.log("🎬 transition start, loopEnabled:", loopEnabled);
     loopEnabled = false; // ← stoppe le loop avant la transition
+    preloadAdjacentModels(cubeIndex);
     console.log("🔒 loopEnabled set to false:", loopEnabled);
     const modelToAnimate = cubesArray.find(
       (cube) => cube.userData.index === cubeIndex,
@@ -597,10 +614,27 @@ export default function initScene(canvas, options = {}) {
   }
 
   let displayedCubeIndex = -1;
+  let currentSlideTl = null;
   function slideModelTransition(nextCubeIndex, direction) {
     if (isTransitioning) return;
+
+    if (currentSlideTl) {
+      currentSlideTl.kill();
+      // Cleanup forcé du modèle affiché actuellement
+      const prevModel = cubesArray.find(
+        (cube) => cube.userData.index === displayedCubeIndex,
+      );
+      if (prevModel) {
+        prevModel.visible = false;
+        const viewHeight = camera.top - camera.bottom;
+        const scaleFactor = (viewHeight * 0.9) / 4;
+        prevModel.scale.set(scaleFactor, scaleFactor, scaleFactor);
+        prevModel.position.x = 0;
+      }
+    }
+
     isTransitioning = true;
-    loopEnabled = false; // ← stoppe le loop avant la transition
+    loopEnabled = false;
 
     const currentModel = cubesArray.find(
       (cube) => cube.userData.index === displayedCubeIndex,
@@ -616,64 +650,90 @@ export default function initScene(canvas, options = {}) {
 
     const viewHeight = camera.top - camera.bottom;
     const scaleFactor = (viewHeight * 0.9) / 4;
-    const slideDistance = 8;
-    const refX = currentModel ? currentModel.position.x : 0;
+    const slideDistance = 12;
 
-    const tl = gsap.timeline({
+    // Capture la position centrale de référence
+    const centerX = 0;
+    const centerY = currentModel ? currentModel.position.y : 0;
+    const centerZ = currentModel ? currentModel.position.z : 0;
+
+    // Prépare le nextModel hors écran
+    nextModel.visible = true;
+    nextModel.position.set(
+      centerX + direction * slideDistance,
+      centerY,
+      centerZ,
+    );
+    nextModel.scale.set(0, 0, 0);
+
+     currentSlideTl = gsap.timeline({
       onComplete: () => {
+        // Restore currentModel proprement pour les prochains retours
+        if (currentModel) {
+          currentModel.visible = false;
+          currentModel.scale.set(scaleFactor, scaleFactor, scaleFactor); // ← scaleFactor pas originalScale
+          currentModel.position.x = centerX; // ← restore la position X
+        }
+
         isTransitioning = false;
-        loopEnabled = false; // ← stoppe le loop après la transition
+        loopEnabled = false;
         displayedCubeIndex = nextCubeIndex;
+        preloadAdjacentModels(nextCubeIndex);
       },
     });
 
-    // Slide out current model
+    // Slide out
     if (currentModel) {
-      tl.to(
+      currentSlideTl.to(
         currentModel.position,
         {
-          x: refX - direction * slideDistance,
-          duration: 0.45,
-          ease: "power2.inOut",
+          x: centerX - direction * slideDistance,
+          duration: 0.7,
+          ease: "power3.inOut",
         },
         0,
       );
-      tl.to(
+      currentSlideTl.to(
         currentModel.scale,
         {
           x: 0,
           y: 0,
           z: 0,
-          duration: 0.3,
-          ease: "power2.in",
+          duration: 0.5,
+          ease: "power3.in",
         },
-        0.1,
+        0,
       );
     }
 
-    // Prépare le nouveau modèle hors écran
-    nextModel.visible = true;
-    nextModel.position.x = refX + direction * slideDistance;
-    nextModel.position.y = currentModel ? currentModel.position.y : 0;
-    nextModel.position.z = currentModel ? currentModel.position.z : 0;
-    nextModel.scale.set(scaleFactor, scaleFactor, scaleFactor);
-
     // Slide in
-    tl.to(
+    currentSlideTl.to(
       nextModel.position,
       {
-        x: refX,
-        duration: 0.5,
-        ease: "power2.out",
+        x: centerX,
+        duration: 0.7,
+        ease: "power3.out",
       },
-      0.15,
+      0.2,
+    );
+    currentSlideTl.to(
+      nextModel.scale,
+      {
+        x: scaleFactor,
+        y: scaleFactor,
+        z: scaleFactor,
+        duration: 0.7,
+        ease: "expo.out",
+      },
+      0.2,
     );
   }
 
   // Écouteur d'événement envoyé par React lors d'un skip
   const handleTrackChangeFromReact = (event) => {
     const nextCubeIndex = event.detail.cubeIndex;
-     isTransitioning = false
+    if (nextCubeIndex === displayedCubeIndex) return;
+    isTransitioning = false;
     const direction = nextCubeIndex > displayedCubeIndex ? 1 : -1;
     slideModelTransition(nextCubeIndex, direction);
   };
