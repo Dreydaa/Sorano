@@ -643,6 +643,8 @@ export default function initScene(canvas, options = {}) {
       (cube) => cube.userData.index === nextCubeIndex,
     );
 
+    if (currentModel) currentModel.visible = false
+
     if (!nextModel) {
       isTransitioning = false;
       return;

@@ -47,6 +47,7 @@ const CoverArtBackground = ({ coverArt, backgroundPosition = 'center', isVisible
           backgroundPosition: bgPosition,
           backgroundSize: 'cover', // Changé de 'cover' à 'contain'
           backgroundRepeat: 'no-repeat',
+          transition: 'background-image 0.3s ease, opacity 0.3s ease',
         }}
         />  
     </div>

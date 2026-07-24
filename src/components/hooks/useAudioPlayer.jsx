@@ -5,8 +5,7 @@ export const useAudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const [debouncedTrackIndex, setDebouncedTrackIndex] = useState(0);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(null);
   const [shuffle, setShuffle] = useState(false);
   const [repeat, setRepeat] = useState(false);
   const [showCoverArt, setShowCoverArt] = useState(false);
@@ -26,15 +25,8 @@ export const useAudioPlayer = () => {
     setVolume(newVolume);
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebouncedTrackIndex(currentTrackIndex);
-    }, 300);
-    return () => clearTimeout(timer);
-  }, [currentTrackIndex]);
-
-// A. Calcul en temps réel de la position (État dérivé)
-  const currentBgPosition = playlist[debouncedTrackIndex]?.backgroundPosition || "center";
+  // A. Calcul en temps réel de la position (État dérivé)
+  const currentBgPosition = playlist[currentTrackIndex]?.backgroundPosition || "center";
 
   // C. Effet secondaire pur : Notifier la scène externe Three.js (Zéro setState ici !)
   useEffect(() => {
@@ -82,8 +74,8 @@ export const useAudioPlayer = () => {
   }, [repeat, shuffle, playlist.length]);
 
   useEffect(() => {
-    if (playlist.length > 0 && playlist[debouncedTrackIndex]?.audioSrc) {
-      const currentTrack = playlist[debouncedTrackIndex];
+    if (playlist.length > 0 && playlist[currentTrackIndex]?.audioSrc) {
+      const currentTrack = playlist[currentTrackIndex];
 
       audioRef.current.src = currentTrack.audioSrc;
 
@@ -93,7 +85,7 @@ export const useAudioPlayer = () => {
           .catch((e) => console.error("Playback failed:", e));
       }
     }
-  }, [debouncedTrackIndex, playlist]);
+  }, [currentTrackIndex, playlist]);
 
   const getRandomTrackIndex = () => {
     let randomIndex;
@@ -115,34 +107,34 @@ export const useAudioPlayer = () => {
   };
 
   const handleNext = () => {
-  let newIndex;
-  if (shuffle) {
-    do {
-      newIndex = Math.floor(Math.random() * playlist.length);
-    } while (newIndex === currentTrackIndex && playlist.length > 1);
-  } else {
-    newIndex = (currentTrackIndex + 1) % playlist.length;
-  }
-  setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
-  setCurrentTrackIndex(newIndex);
-  setShowCoverArt(true)
-  return newIndex;
-};
+    let newIndex;
+    if (shuffle) {
+      do {
+        newIndex = Math.floor(Math.random() * playlist.length);
+      } while (newIndex === currentTrackIndex && playlist.length > 1);
+    } else {
+      newIndex = (currentTrackIndex + 1) % playlist.length;
+    }
+    setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
+    setCurrentTrackIndex(newIndex);
+    setShowCoverArt(true)
+    return newIndex;
+  };
 
-const handlePrevious = () => {
-  let newIndex;
-  if (shuffle) {
-    do {
-      newIndex = Math.floor(Math.random() * playlist.length);
-    } while (newIndex === currentTrackIndex && playlist.length > 1);
-  } else {
-    newIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-  }
-  setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
-  setCurrentTrackIndex(newIndex);
-  setShowCoverArt(true)
-  return newIndex;
-};
+  const handlePrevious = () => {
+    let newIndex;
+    if (shuffle) {
+      do {
+        newIndex = Math.floor(Math.random() * playlist.length);
+      } while (newIndex === currentTrackIndex && playlist.length > 1);
+    } else {
+      newIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+    }
+    setCurrentTextColor(playlist[newIndex]?.textColor || '#ffffff') // ← fix newTrack
+    setCurrentTrackIndex(newIndex);
+    setShowCoverArt(true)
+    return newIndex;
+  };
 
   const handleTimeUpdate = (e) => {
     const newTime = parseFloat(e.target.value);
@@ -175,8 +167,8 @@ const handlePrevious = () => {
     setCurrentTextColor,
     currentTextColor,
     duration,
-    currentTrack: playlist[currentTrackIndex] || {},
-    currentCoverArt: playlist[debouncedTrackIndex]?.coverArt, // <-- Use debounced track for image fetch
+    currentTrack: currentTrackIndex !== null ? (playlist[currentTrackIndex] || {}) : {},
+    currentCoverArt: currentTrackIndex !== null ? playlist[currentTrackIndex]?.coverArt : null,
     currentBgPosition,
     showCoverArt,
     shuffle,

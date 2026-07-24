@@ -55,8 +55,8 @@ export default function initMobileScene(canvas, options = {}) {
   };
   const SIDE_SCALE_FACTOR = 1;
   const CENTER_SCALE_FACTOR = 1;
-  const TRANSITION_DURATION = 0.6;
-  const TRANSITION_EASE = "power2.inOut";
+  const TRANSITION_DURATION = 0.2;
+  const TRANSITION_EASE = "expo.Out";
 
   // ─── State ───
   let currentIndex = 0;
@@ -79,10 +79,22 @@ export default function initMobileScene(canvas, options = {}) {
     box.getSize(size);
     box.getCenter(center);
 
-    model.traverse((child) => {
-      if (child.isMesh)
-        child.geometry.translate(-center.x, -center.y, -center.z);
-    });
+    model.traverse(child => {
+  if (child.isMesh) {
+    child.geometry.translate(-center.x, -center.y, -center.z)
+    child.renderOrder = 0
+
+    if (child.material) {
+      const materials = Array.isArray(child.material) ? child.material : [child.material]
+      materials.forEach(mat => {
+        if (mat) {
+          mat.depthWrite = true
+          mat.depthTest = true
+        }
+      })
+    }
+  }
+})
 
     const scale = 2 / Math.max(size.x, size.y);
     model.scale.set(scale, scale, scale);
@@ -134,47 +146,85 @@ export default function initMobileScene(canvas, options = {}) {
     model.position.set(pos.x, pos.y, pos.z);
   }
 
-  function getArcPoint(start, end) {
-    return {
-      x: (start.x + end.x) / 2,
-      y: Math.max(start.y, end.y) + 0.3, // Control point higher up for the bezier arc
-      z: (start.z + end.z) / 2,
-    };
-  }
+  // function getArcPoint(start, end) {
+  //   return {
+  //     x: (start.x + end.x) / 2,
+  //     y: Math.max(start.y, end.y) + 0.3, // Control point higher up for the bezier arc
+  //     z: (start.z + end.z) / 2,
+  //   };
+  // }
 
   function animateSlot(model, startKey, endKey, tl) {
     if (!model) return;
-    const start = SLOT[startKey];
     const end = SLOT[endKey];
 
-    let scaleF = SIDE_SCALE_FACTOR;
-    if (endKey === "center") scaleF = CENTER_SCALE_FACTOR;
+    const isArriving = endKey === "center";
+    const isLeaving = startKey === "center";
+    const isExiting = endKey === "offLeft" || endKey === "offRight";
 
+    let scaleF = isArriving ? CENTER_SCALE_FACTOR : SIDE_SCALE_FACTOR;
     const targetS = (model.userData.baseScale || 1) * scaleF;
+
+    // Scale
     tl.to(
       model.scale,
       {
-        x: targetS,
-        y: targetS,
-        z: targetS,
+        x: isExiting ? 0 : targetS,
+        y: isExiting ? 0 : targetS,
+        z: isExiting ? 0 : targetS,
         duration: TRANSITION_DURATION,
-        ease: TRANSITION_EASE,
+        ease: isExiting ? "power3.in" : TRANSITION_EASE,
       },
       0,
     );
 
+    const targetOrder =
+      endKey === "center"
+        ? 2
+        : endKey === "offLeft" || endKey === "offRight"
+          ? 0
+          : 1;
+    model.traverse((child) => {
+      if (child.isMesh) child.renderOrder = targetOrder;
+    });
+    // Position
     tl.to(
       model.position,
       {
-        motionPath: {
-          path: [getArcPoint(start, end), end],
-          type: "soft", // Soft path makes it curve using the intermediate point
-        },
+        x: end.x,
+        y: end.y,
+        z: end.z,
         duration: TRANSITION_DURATION,
-        ease: TRANSITION_EASE,
+        ease: isLeaving ? "power3.in" : TRANSITION_EASE,
       },
       0,
     );
+
+    // Pop léger sur le modèle qui arrive au centre
+    if (isArriving) {
+      tl.to(
+        model.scale,
+        {
+          x: targetS * 1.06,
+          y: targetS * 1.06,
+          z: targetS * 1.06,
+          duration: TRANSITION_DURATION * 0.3,
+          ease: "power2.out",
+        },
+        TRANSITION_DURATION * 0.7,
+      );
+      tl.to(
+        model.scale,
+        {
+          x: targetS,
+          y: targetS,
+          z: targetS,
+          duration: TRANSITION_DURATION * 0.3,
+          ease: "power2.inOut",
+        },
+        TRANSITION_DURATION,
+      );
+    }
   }
 
   function wrap(index) {
@@ -186,7 +236,7 @@ export default function initMobileScene(canvas, options = {}) {
   // ─── Carousel initialization ───
 
   async function initCarousel() {
-    const centerIdx = 0;
+    const centerIdx = Math.floor(Math.random() * tracksData.length);
     const leftIdx = wrap(centerIdx - 1);
     const rightIdx = wrap(centerIdx + 1);
 
@@ -239,19 +289,24 @@ export default function initMobileScene(canvas, options = {}) {
     scene.remove(model);
   }
 
+  let currentTl = null;
+
   async function swipeNext() {
     if (isAnimating) return;
+    if (currentTl) currentTl.kill();
     isAnimating = true;
 
     const newCenterIdx = wrap(currentIndex + 1);
     const newRightIdx = wrap(newCenterIdx + 1);
     const newModelPromise = loadModel(newRightIdx);
 
-    const tl = gsap.timeline({
+    currentTl = gsap.timeline({
       onComplete: async () => {
         if (slots.left.model) disposeModel(slots.left.model);
         slots.left = { model: slots.center.model, index: slots.center.index };
         slots.center = { model: slots.right.model, index: slots.right.index };
+        currentTl = null;
+        isAnimating = false;
 
         const newModel = await newModelPromise;
         if (newModel) {
@@ -267,24 +322,27 @@ export default function initMobileScene(canvas, options = {}) {
       },
     });
 
-    animateSlot(slots.left.model, "left", "offLeft", tl);
-    animateSlot(slots.center.model, "center", "left", tl);
-    animateSlot(slots.right.model, "right", "center", tl);
+    animateSlot(slots.left.model, "left", "offLeft", currentTl);
+    animateSlot(slots.center.model, "center", "left", currentTl);
+    animateSlot(slots.right.model, "right", "center", currentTl);
   }
 
   async function swipePrev() {
     if (isAnimating) return;
+    if (currentTl) currentTl.kill();
     isAnimating = true;
 
     const newCenterIdx = wrap(currentIndex - 1);
     const newLeftIdx = wrap(newCenterIdx - 1);
     const newModelPromise = loadModel(newLeftIdx);
 
-    const tl = gsap.timeline({
+    currentTl = gsap.timeline({
       onComplete: async () => {
         if (slots.right.model) disposeModel(slots.right.model);
         slots.right = { model: slots.center.model, index: slots.center.index };
         slots.center = { model: slots.left.model, index: slots.left.index };
+        currentTl = null;
+        isAnimating = false;
 
         const newModel = await newModelPromise;
         if (newModel) {
@@ -300,13 +358,14 @@ export default function initMobileScene(canvas, options = {}) {
       },
     });
 
-    animateSlot(slots.right.model, "right", "offRight", tl);
-    animateSlot(slots.center.model, "center", "right", tl);
-    animateSlot(slots.left.model, "left", "center", tl);
+    animateSlot(slots.right.model, "right", "offRight", currentTl);
+    animateSlot(slots.center.model, "center", "right", currentTl);
+    animateSlot(slots.left.model, "left", "center", currentTl);
   }
 
   async function rebuildCarousel(newCenterIdx, direction) {
-    if (isAnimating) return;
+    if (currentTl) currentTl.kill();
+
     isAnimating = true;
 
     const leftIdx = wrap(newCenterIdx - 1);
@@ -318,7 +377,7 @@ export default function initMobileScene(canvas, options = {}) {
     ]);
     const exitKey = direction > 0 ? "offLeft" : "offRight";
 
-    const tl = gsap.timeline({
+    currentTl = gsap.timeline({
       onComplete: async () => {
         if (slots.left.model) disposeModel(slots.left.model);
         if (slots.center.model) disposeModel(slots.center.model);
@@ -349,9 +408,9 @@ export default function initMobileScene(canvas, options = {}) {
       },
     });
 
-    animateSlot(slots.left.model, "left", exitKey, tl);
-    animateSlot(slots.center.model, "center", exitKey, tl);
-    animateSlot(slots.right.model, "right", exitKey, tl);
+    animateSlot(slots.left.model, "left", exitKey, currentTl);
+    animateSlot(slots.center.model, "center", exitKey, currentTl);
+    animateSlot(slots.right.model, "right", exitKey, currentTl);
   }
 
   initCarousel();
